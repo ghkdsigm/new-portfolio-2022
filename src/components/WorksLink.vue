@@ -7,7 +7,7 @@
   >
     <div class="workbtnWrap">
       <a
-        href="/Works"
+        href="/works"
         title="포트폴리오 페이지 바로가기"
         class="workbtn"
         target="_blank"
