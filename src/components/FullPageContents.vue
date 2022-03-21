@@ -4,7 +4,10 @@
       <div class="anchors"><ul></ul></div>
       <div id="container" class="pg-container">
         <!-- pages -->
-        <section data-anchor="Page 1"><div class="text">Page 1</div></section>
+        <section data-anchor="Page 1">
+          <Headline />
+          <div class="text">Page 1</div>
+        </section>
         <section data-anchor="Page 2"><div class="text">Page 2</div></section>
         <section data-anchor="Page 3"><div class="text">Page 3</div></section>
         <section data-anchor="Page 4"><div class="text">Page 4</div></section>
@@ -19,7 +22,11 @@
 
 <script>
 import Pageable from "pageable";
+import Headline from "./Headline";
 export default {
+  components: {
+    Headline,
+  },
   mounted() {
     new Pageable("#container", {
       childSelector: "[data-anchor]", // CSS3 selector string for the pages

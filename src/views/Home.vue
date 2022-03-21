@@ -4,7 +4,7 @@
       <Headline />
       <InfoList />
       <div id="canvas_area">
-        <!-- <canvas width="983" height="937"></canvas> -->
+        <canvas width="983" height="937"></canvas>
       </div>
       <img
         src="@/assets/images/ezgif.gif"
@@ -30,7 +30,7 @@
       class="section05 sect"
       :style="{
         'background-image':
-          'url(http://ghkdsigm.dothome.co.kr/images/worksImg.png)',
+          'url(https://raw.githubusercontent.com/ghkdsigm/new-portfolio-2022/main/src/assets/images/worksImg.png)',
       }"
     >
       <WorksLink />
@@ -49,6 +49,7 @@ import Reprentive from "@/components/Reprentive";
 import Skills from "@/components/Skills";
 import WorksLink from "@/components/WorksLink";
 import AppFooter from "@/components/common/AppFooter";
+
 export default {
   components: {
     Headline,
@@ -161,7 +162,7 @@ export default {
 }
 
 .section03 {
-  background: url(http://ghkdsigm.dothome.co.kr/images/backPoint.png);
+  background: url(https://raw.githubusercontent.com/ghkdsigm/new-portfolio-2022/main/src/assets/images/backPoint.png);
   background-color: #161616;
   background-position: center 900px;
   background-repeat: no-repeat;
@@ -177,8 +178,8 @@ export default {
     height: 100%;
     z-index: 1;
     opacity: 0.2;
-    background: url(http://ghkdsigm.dothome.co.kr/images/square-bg.png) repeat 0
-      0;
+    background: url(https://raw.githubusercontent.com/ghkdsigm/new-portfolio-2022/main/src/assets/images/square-bg.png)
+      repeat 0 0;
     -webkit-animation: bg-scrolling-reverse 10s infinite;
     animation: bg-scrolling-reverse 10s infinite;
     -webkit-animation-timing-function: linear;

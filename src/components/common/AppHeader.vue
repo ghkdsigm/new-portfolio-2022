@@ -39,7 +39,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 header {
   position: absolute;
   left: 120px;
@@ -48,19 +48,34 @@ header {
   z-index: 1;
   transition: transform 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0.1s,
     margin 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
-}
-header .nav {
-  z-index: 12;
-}
-header .nav div .nav-link {
-  font-family: "NATSRegular" !important;
-  font-size: 27px;
-  font-weight: 100;
-  letter-spacing: -1px;
-  color: #fff;
-  padding: 0 1.5rem 0 0;
-}
-header .nav div .nav-link.active {
-  font-weight: bold;
+  .navigations {
+    z-index: 12;
+    font-weight: 300;
+    div {
+      .nav-link {
+        font-family: "NATSRegular" !important;
+        font-size: 27px;
+        font-weight: 100;
+        letter-spacing: -1px;
+        color: #fff;
+        padding: 0 1.5rem 0 0;
+      }
+      .nav-link.active {
+        font-weight: bold;
+      }
+      a {
+        font-size: 1.6rem;
+        &:first-child {
+          margin-right: 15px;
+        }
+        &:hover {
+          font-weight: 500;
+        }
+      }
+    }
+  }
+  .router-link-active {
+    font-weight: bold;
+  }
 }
 </style>

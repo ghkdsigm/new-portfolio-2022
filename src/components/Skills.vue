@@ -3,13 +3,13 @@
     <div class="innerWrap clearfix">
       <div class="innerWrapper">
         <div class="r_career_top">
-          <h5 class="Nondraggable">SKILLS &amp; TOOLS</h5>
+          <h5 class="Nondraggable">Skills &amp; Tools</h5>
           <p class="Nondraggable">
-            현재 <b>실무에 활용</b>하고 또 계속해서 <b>배움</b>을
+            <b>실무에 활용</b>하였고 또 계속해서 <b>배움</b>을
             <b></b>실천하고있는 <b>언어</b>이자 <b>도구</b>입니다.
             <br />
-            사용하고있는 언어와 더불어 나아가 <b>서버</b>를 깊게 학습하여
-            <br /><br />
+            사용하고있는 언어 및 기술들과 더불어 나아가 <b>서버</b>를 깊게
+            학습하여 <br /><br />
             더욱 <b>폭넓게 확장된 업무 수행 능력</b>을 기를것입니다.
           </p>
         </div>
@@ -82,6 +82,9 @@
         line-height: 32px;
         padding: 35px 0;
         font-size: 23px;
+      }
+      b {
+        font-weight: bold;
       }
     }
     .skills {

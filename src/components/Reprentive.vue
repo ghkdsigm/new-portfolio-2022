@@ -3,7 +3,7 @@
     <div class="innerWrap clearfix">
       <div class="innerWrapper">
         <div class="r_career_top">
-          <h5 class="Nondraggable">REPRESENTATIVE PROJECTS</h5>
+          <h5 class="Nondraggable">Representative Projects</h5>
           <p class="Nondraggable">
             수많은 대국민 서비스 프로젝트에서 다양한 역할로서의 업무 수행을 통해
             <br /><b>성공적인 결과</b>를 이끌어낸 경험은 누구도 쉽게
@@ -144,6 +144,9 @@
         padding: 35px 0;
         font-size: 23px;
       }
+      b {
+        font-weight: bold;
+      }
     }
     .r_career_side {
       width: 50%;
@@ -151,12 +154,12 @@
       padding: 15px 0;
       vertical-align: top;
       ul {
-        padding: 0 0 0 55px;
+        padding: 0 25px 0 25px;
         li {
           line-height: 44px;
           span {
             color: #fff;
-            font-size: 15px;
+            font-size: 16px;
             font-weight: 100;
             display: inline-block;
             font-family: "Noto Sans KR", sans-serif;

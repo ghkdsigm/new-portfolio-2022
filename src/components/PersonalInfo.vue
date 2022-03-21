@@ -22,8 +22,8 @@
           <div class="p_info_inner">
             <h4 class="Nondraggable">
               <b>'적자생존은 만고불변의 진리' </b> 주어진 어떠한 환경과
-              역할에서도<br />
-              동료와 함께 더 나은 길을 만들어 나아가는 사람이 되고자 합니다.
+              역할에서도 동료와 함께 더 나은 길을 만들어 나아가는 사람이 되고자
+              합니다.
             </h4>
             <div class="career">
               <h5>Educations</h5>
@@ -160,7 +160,6 @@
         ul {
           padding: 0;
           li {
-            padding: 10px 0 0;
             &:first-child {
               padding: 5px 0 0;
             }
