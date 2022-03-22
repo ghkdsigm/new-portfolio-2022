@@ -5,10 +5,24 @@
       <div id="container" class="pg-container">
         <!-- pages -->
         <section data-anchor="Page 1">
-          <Headline />
-          <div class="text">Page 1</div>
+          <Headline>
+            <a class="Aline Aline_away" slot="s_title">
+              <span class>Portfolio </span>
+            </a>
+            <span class="Bline Bline_away ft" slot="s_name"
+              >Hwang Seung Hyun</span
+            >
+            <h3 class="comment comment_away" slot="s_comment">
+              Various<br />Work Experiences<br />For your Brand
+            </h3>
+          </Headline>
+          <FirstPage />
         </section>
-        <section data-anchor="Page 2"><div class="text">Page 2</div></section>
+        <section data-anchor="Page 2">
+          <div class="text">
+            <SecondPage />
+          </div>
+        </section>
         <section data-anchor="Page 3"><div class="text">Page 3</div></section>
         <section data-anchor="Page 4"><div class="text">Page 4</div></section>
         <section data-anchor="Page 5"><div class="text">Page 5</div></section>
@@ -23,9 +37,13 @@
 <script>
 import Pageable from "pageable";
 import Headline from "./Headline";
+import FirstPage from "./fullpages/FirstPage";
+import SecondPage from "./fullpages/SecondPage";
 export default {
   components: {
     Headline,
+    FirstPage,
+    SecondPage,
   },
   mounted() {
     new Pageable("#container", {
@@ -47,7 +65,7 @@ export default {
       // },
       events: {
         wheel: true, // enable / disable mousewheel scrolling
-        mouse: true, // enable / disable mouse drag scrolling
+        mouse: false, // enable / disable mouse drag scrolling
         touch: true, // enable / disable touch / swipe scrolling
         keydown: true, // enable / disable keyboard navigation
       },
@@ -84,7 +102,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .pg-wrapper {
   background: #2a2a2a;
   overflow: hidden;
@@ -112,12 +130,19 @@ section {
   color: #fff;
   position: relative;
 }
-#page-1 .text,
-#page-1-clone .text {
-  background-color: #3f51b5;
+#page-1 {
+  background: linear-gradient(-45deg, #ffffff, #bcddfb, #ffffff, #ffffff);
+  background-size: 400% 400%;
+  -webkit-animation: gradient 10s infinite;
+  animation: gradient 10s infinite;
+  height: 100vh;
 }
+// #page-1 .text,
+// #page-1-clone .text {
+// }
 #page-2 .text {
-  background-color: #673ab7;
+  background-color: #fff;
+  overflow: hidden;
 }
 #page-3 .text {
   background-color: #9c27b0;

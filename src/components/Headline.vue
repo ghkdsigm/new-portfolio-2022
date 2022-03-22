@@ -1,12 +1,10 @@
 <template>
   <div class="headlineTxt on">
     <p class="inner Nondraggable">
-      <a class="Aline">
-        <span class>Portfolio </span>
-      </a>
-      <span class="Bline ft">Hwang Seung Hyun</span>
+      <slot name="s_title"></slot>
+      <slot name="s_name"></slot>
     </p>
-    <h3 class="comment">Various<br />Work Experiences<br />For your Brand</h3>
+    <slot name="s_comment"></slot>
   </div>
 </template>
 
@@ -44,6 +42,9 @@ export default {};
       opacity: 0.5;
     }
   }
+  .comment_away {
+    color: #000;
+  }
   .inner {
     .Aline {
       display: inline-block;
@@ -70,6 +71,12 @@ export default {};
         }
       }
     }
+    .Aline_away {
+      color: #858585;
+      &::after {
+        background: #858585;
+      }
+    }
     .Bline {
       display: inline-block;
       font-family: "Noto Sans KR";
@@ -79,6 +86,9 @@ export default {};
       vertical-align: middle;
       top: 4px;
       position: relative;
+    }
+    .Bline_away {
+      color: #000;
     }
   }
 }

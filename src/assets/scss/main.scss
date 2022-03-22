@@ -24,6 +24,46 @@ $primary:royalblue;
     }
 }
 
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    25% {
+        background-position: 50% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    75% {
+        background-position: 50% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+@-webkit-keyframes blink {
+    to {
+        opacity: .0;
+    }
+    }
+
+    @-moz-keyframes blink {
+    to {
+        opacity: .0;
+    }
+    }
+
+    @-o-keyframes blink {
+    to {
+        opacity: .0;
+    }
+}
+
+@keyframes blink {
+to {
+    opacity: .0;
+}
+}
 @-webkit-keyframes bg-scrolling-reverse{to{background-position:120px 120px}}
 @keyframes bg-scrolling-reverse{to{background-position:120px 120px}}
 @keyframes bg-scrolling{0%{background-position:120px 120px}}

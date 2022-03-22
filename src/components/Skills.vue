@@ -88,16 +88,17 @@
       }
     }
     .skills {
-      display: flex;
+      // display: flex;
       width: 100%;
       height: auto;
       text-align: center;
       padding: 0;
       justify-content: center;
       li {
-        margin: 0 20px;
-        width: 90px;
+        margin: 0 15px 15px;
+        width: 80px;
         overflow: hidden;
+        display: inline-block;
         box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.267);
         img {
           display: block;

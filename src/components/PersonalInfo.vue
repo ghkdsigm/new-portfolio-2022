@@ -107,7 +107,7 @@
     }
     .p_basic_inner {
       text-align: left;
-      padding: 4rem 0 0 7rem;
+      padding: 3.8rem 0 0 7rem;
       h3 {
         font-size: 40px;
         letter-spacing: 5px;
@@ -124,7 +124,7 @@
         padding: 0;
         li {
           font-size: 16px;
-          line-height: 35px;
+          line-height: 30px;
           font-weight: 300;
           letter-spacing: 0.3px;
         }
