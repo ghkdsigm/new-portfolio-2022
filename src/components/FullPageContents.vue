@@ -23,7 +23,11 @@
             <SecondPage />
           </div>
         </section>
-        <section data-anchor="Page 3"><div class="text">Page 3</div></section>
+        <section data-anchor="Page 3">
+          <div class="text">
+            <ThirdPage />
+          </div>
+        </section>
         <section data-anchor="Page 4"><div class="text">Page 4</div></section>
         <section data-anchor="Page 5"><div class="text">Page 5</div></section>
         <section data-anchor="Page 6"><div class="text">Page 6</div></section>
@@ -39,11 +43,13 @@ import Pageable from "pageable";
 import Headline from "./Headline";
 import FirstPage from "./fullpages/FirstPage";
 import SecondPage from "./fullpages/SecondPage";
+import ThirdPage from "./fullpages/ThirdPage";
 export default {
   components: {
     Headline,
     FirstPage,
     SecondPage,
+    ThirdPage,
   },
   mounted() {
     new Pageable("#container", {
@@ -130,6 +136,9 @@ section {
   color: #fff;
   position: relative;
 }
+.text {
+  overflow: hidden;
+}
 #page-1 {
   background: linear-gradient(-45deg, #ffffff, #bcddfb, #ffffff, #ffffff);
   background-size: 400% 400%;
@@ -145,7 +154,7 @@ section {
   overflow: hidden;
 }
 #page-3 .text {
-  background-color: #9c27b0;
+  background-color: #fff;
 }
 #page-4 .text {
   background-color: #e91e63;
