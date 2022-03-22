@@ -30,3 +30,97 @@ a:hover {
 .container {
   max-width:1400px;
 }
+
+
+/*--- slideTitle ---*/
+
+.Mh1 {
+  position: absolute;
+  display: block;
+  vertical-align: middle;
+  font-size: 70px;
+  height: 80px;
+  text-transform: uppercase;
+  font-weight: 700;
+  overflow: hidden;
+  line-height: 400px;
+  -webkit-transition: line-height 0.85s cubic-bezier(0.77, 0, 0.175, 1);
+  -moz-transition: line-height 0.85s cubic-bezier(0.77, 0, 0.175, 1);
+  -o-transition: line-height 0.85s cubic-bezier(0.77, 0, 0.175, 1);
+  transition: line-height 0.85s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.Mh2 {
+  position: absolute;
+  font-family: 'Lato', sans-serif;
+  font-size: 50px;
+  height: 50px;
+  text-transform: uppercase;
+  font-weight: 300;
+  overflow: hidden;
+  line-height: 5;
+  -webkit-transition: line-height 0.85s cubic-bezier(0.77, 0, 0.175, 1);
+  -moz-transition: line-height 0.85s cubic-bezier(0.77, 0, 0.175, 1);
+  -o-transition: line-height 0.85s cubic-bezier(0.77, 0, 0.175, 1);
+  transition: line-height 0.85s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+/*Desktop Aligning*/
+
+@media screen and (min-width: 700px) {
+  .Mh1 {
+    bottom: 95px;
+    right: 45px;
+  }
+  .Mh2 {
+    bottom: 40px;
+    right: 45px;
+  }
+}
+
+/*Mobile Aligning*/
+
+@media screen and (max-width: 700px) {
+  .Mh1 {
+    display: none;
+  }
+  .Mh2 {
+    display: none;
+  }
+}
+
+
+/*Set Delay When Scrolled Out of View*/
+
+.Mh1 {
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.Mh2 {
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+
+/*Pop in When Scrolled in*/
+
+.pg-active .Mh1 {
+  line-height: 80px;
+  -webkit-transition-delay: .3s;
+  -moz-transition-delay: .3s;
+  -o-transition-delay: .3s;
+  transition-delay: .3s;
+}
+
+.pg-active .Mh2 {
+  line-height: 1;
+  -webkit-transition-delay: .5s;
+  -moz-transition-delay: .5s;
+  -o-transition-delay: .5s;
+  transition-delay: .5s;
+}
