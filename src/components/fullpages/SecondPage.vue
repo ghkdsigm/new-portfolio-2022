@@ -167,6 +167,8 @@
         </div>
       </swiper-slide>
       <div class="swiper-pagination" slot="pagination"></div>
+      <!-- <div class="swiper-button-prev" slot="button-prev"></div>
+      <div class="swiper-button-next" slot="button-next"></div> -->
     </swiper>
     <h1 class="Mh1" style="color: #222">신규 구축 &amp; 운영</h1>
     <h2 class="Mh2" style="color: #222">Works.</h2>
@@ -174,23 +176,32 @@
 </template>
 
 <script>
+import "swiper/dist/css/swiper.css";
+import { swiper, swiperSlide } from "vue-awesome-swiper";
 export default {
   name: "HomeSwiper",
+  components: {
+    swiper,
+    swiperSlide,
+  },
   data() {
     return {
       swiperOptions: {
-        // 네비게이션
-        navigation: true,
-
-        // 페이지네이션
-        pagination: true,
         slidesPerView: 2,
-        spaceBetween: 50, // swiper-slide 사이의 간격 지정
+        spaceBetween: 50,
+        freeMode: false,
+        loop: false,
+        // navigation: {
+        //   nextEl: ".swiper-button-next",
+        //   prevEl: ".swiper-button-prev",
+        // },
+        pagination: {
+          type: "progressbar",
+          el: ".swiper-pagination",
+        },
         slidesOffsetBefore: 0, // slidesOffsetBefore는 첫번째 슬라이드의 시작점에 대한 변경할 때 사용
         slidesOffsetAfter: 0, // slidesOffsetAfter는 마지막 슬라이드 시작점 + 마지막 슬라이드 너비에 해당하는 위치의 변경이 필요할 때 사용
-        freeMode: true, // freeMode를 사용시 스크롤하는 느낌으로 구현 가능
-        centerInsufficientSlides: true, // 컨텐츠의 수량에 따라 중앙정렬 여부를 결정함
-        loop: false,
+        centerInsufficientSlides: false, // 컨텐츠의 수량에 따라 중앙정렬 여부를 결정함
       },
     };
   },
@@ -216,6 +227,7 @@ export default {
     left: 0;
     bottom: 0;
     height: 400px;
+    cursor: pointer;
     .swiper-slide {
       flex-shrink: inherit;
       .img_box {

@@ -3,10 +3,11 @@ import App from "./App.vue";
 import router from "@/routes/index";
 import store from "@/store/index";
 import VueAwesomeSwiper from "vue-awesome-swiper";
-import "swiper/dist/css/swiper.css";
+import XParticles from "x-particles";
 
 Vue.config.productionTip = false;
 Vue.use(VueAwesomeSwiper);
+Vue.use(XParticles);
 
 new Vue({
   render: h => h(App),

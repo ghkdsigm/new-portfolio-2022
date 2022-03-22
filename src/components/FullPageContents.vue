@@ -28,10 +28,21 @@
             <ThirdPage />
           </div>
         </section>
-        <section data-anchor="Page 4"><div class="text">Page 4</div></section>
-        <section data-anchor="Page 5"><div class="text">Page 5</div></section>
-        <section data-anchor="Page 6"><div class="text">Page 6</div></section>
-        <section data-anchor="Page 7"><div class="text">Page 7</div></section>
+        <section data-anchor="Page 4">
+          <div class="text">
+            <FourthPage />
+          </div>
+        </section>
+        <section data-anchor="Page 5">
+          <div class="text">
+            <FifthPage />
+          </div>
+        </section>
+        <section data-anchor="Page 6">
+          <div class="text">
+            <SixthPage />
+          </div>
+        </section>
       </div>
       <!-- pips will go here -->
     </div>
@@ -44,12 +55,18 @@ import Headline from "./Headline";
 import FirstPage from "./fullpages/FirstPage";
 import SecondPage from "./fullpages/SecondPage";
 import ThirdPage from "./fullpages/ThirdPage";
+import FourthPage from "./fullpages/FourthPage";
+import FifthPage from "./fullpages/FifthPage";
+import SixthPage from "./fullpages/SixthPage";
 export default {
   components: {
     Headline,
     FirstPage,
     SecondPage,
     ThirdPage,
+    FourthPage,
+    FifthPage,
+    SixthPage,
   },
   mounted() {
     new Pageable("#container", {
@@ -140,7 +157,7 @@ section {
   overflow: hidden;
 }
 #page-1 {
-  background: linear-gradient(-45deg, #ffffff, #bcddfb, #ffffff, #ffffff);
+  background: linear-gradient(-45deg, #ffffff, #cce6ff, #ffffff, #ffffff);
   background-size: 400% 400%;
   -webkit-animation: gradient 10s infinite;
   animation: gradient 10s infinite;
@@ -157,14 +174,14 @@ section {
   background-color: #fff;
 }
 #page-4 .text {
-  background-color: #e91e63;
+  background-color: #fff;
 }
 #page-5 .text {
-  background-color: #f44336;
+  background-color: #1b1d20;
 }
 #page-6 .text,
 #page-6-clone .text {
-  background-color: #4caf50;
+  background-color: #af4c5d;
 }
 
 .scroller {

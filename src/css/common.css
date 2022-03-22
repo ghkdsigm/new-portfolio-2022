@@ -37,7 +37,6 @@ a:hover {
 .Mh1 {
   position: absolute;
   display: block;
-  vertical-align: middle;
   font-size: 70px;
   height: 80px;
   text-transform: uppercase;
@@ -70,11 +69,11 @@ a:hover {
 @media screen and (min-width: 700px) {
   .Mh1 {
     bottom: 95px;
-    right: 45px;
+    right: 120px;
   }
   .Mh2 {
     bottom: 40px;
-    right: 45px;
+    right: 120px;
   }
 }
 

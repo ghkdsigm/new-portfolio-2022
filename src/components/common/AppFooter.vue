@@ -1,6 +1,12 @@
 <template>
   <div class="footer">
     <div class="footer_wrap" style="opacity: 1">
+      <a href="https://github.com/ghkdsigm" class="gitLink" target="_target"
+        ><img
+          src="@/assets/images/githubIcon.png"
+          alt="깃허브아이콘"
+        />Gibhub</a
+      >
       This page is optimized for Google Chrome &amp; Microsoft Edge web browser.
       <span class="copy">Copyright(C) 2022. All Rights Reserved.</span>
       <p>
@@ -11,6 +17,21 @@
 </template>
 
 <style lang="scss" scoped>
+.gitLink {
+  width: 50px;
+  height: 50px;
+  display: block;
+  margin: 0 auto 35px;
+  text-align: center;
+  font-size: 12px;
+  color: #999;
+  &:hover {
+    color: #fff;
+  }
+  img {
+    width: 100%;
+  }
+}
 .footer {
   font-family: "Roboto", sans-serif;
   background-color: #262626;
