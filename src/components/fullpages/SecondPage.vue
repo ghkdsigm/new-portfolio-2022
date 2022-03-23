@@ -227,7 +227,6 @@ export default {
     left: 0;
     bottom: 0;
     height: 400px;
-    cursor: pointer;
     .swiper-slide {
       flex-shrink: inherit;
       .img_box {
@@ -285,7 +284,7 @@ export default {
           p {
             font-size: 15px;
             width: 100%;
-            color: #ffd400;
+            color: #ffb27b;
             margin-bottom: 15px;
           }
           .joinArea {
@@ -306,7 +305,6 @@ export default {
             margin: 10px 10px 0;
             min-width: 150px;
             font-size: 16px;
-            cursor: pointer;
             background: transparent;
             &:hover {
               border: 2px solid #fff;

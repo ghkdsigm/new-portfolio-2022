@@ -11,6 +11,7 @@
     "@diracleo/vue-enlargeable-image": "0.0.7",
     "axios": "^0.26.1",
     "core-js": "^3.6.5",
+    "magicmouse.js": "^1.2.1",
     "node-sass": "^4.14.1",
     "pageable": "^0.6.8",
     "sass-loader": "^10.2.1",

@@ -73,7 +73,6 @@ export default {
       letter-spacing: 4px;
       position: relative;
       overflow: hidden;
-      cursor: pointer;
       width: 100%;
       text-decoration: none;
       height: 100%;
