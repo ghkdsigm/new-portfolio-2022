@@ -57,7 +57,7 @@
         >ghkdsigm3@gmail.com</span
       >
     </div>
-    <h1 class="Mh1" style="color: #fff">글 보내기</h1>
+    <h1 class="Mh1" style="color: #fff">문의 하기</h1>
     <h2 class="Mh2" style="color: #fff">Contact.</h2>
   </div>
 </template>

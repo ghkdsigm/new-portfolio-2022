@@ -54,7 +54,7 @@ export default {
 }
 
 .pg-pips li .active span {
-  background: #fff;
+  background: #ffb27b;
   position: absolute;
 }
 
@@ -100,13 +100,14 @@ export default {
   border-radius: 50%;
   position: absolute;
   z-index: 1;
-  height: 4px;
-  width: 4px;
+  height: 6px;
+  width: 6px;
   border: 0;
-  background: #fff;
+  background: #ffb27b;
+  border: 1px solid #ffbd8f6b;
   left: 50%;
   top: 50%;
-  margin: -2px 0 0 -2px;
+  margin: -2px 0 0 -3px;
   transition: all 0.1s ease-in-out;
 }
 

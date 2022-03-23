@@ -31,9 +31,6 @@ export default {
       whiteObject: {
         color: "#fff",
       },
-      overFlow: {
-        overflow: "auto",
-      },
     };
   },
   computed: {},
@@ -75,7 +72,7 @@ header {
       }
     }
   }
-  .router-link-active {
+  .router-link-exact-active {
     font-weight: bold;
   }
 }

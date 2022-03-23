@@ -1,7 +1,7 @@
 <template>
   <div>
     <span class="skills_html intro">
-      <p class="typing-txt" ref="txt">MY WORKS</p>
+      <p class="typing-txt" ref="txt">&lt;h1&gt; MY WORKS &lt;/h1&gt;</p>
       <p class="typing" ref="typingtxt"></p>
       <p class="blink">|</p>
     </span>
@@ -11,7 +11,9 @@
 <script>
 export default {
   data() {
-    return {};
+    return {
+      ss: this.$route,
+    };
   },
   mounted() {
     var typingBool = false;
@@ -27,7 +29,7 @@ export default {
     if (typingBool == false) {
       // 타이핑이 진행되지 않았다면
       typingBool = true;
-      var tyInt = setInterval(typing, 300); // 반복동작
+      var tyInt = setInterval(typing, 200); // 반복동작
     }
 
     function typing() {
@@ -41,6 +43,7 @@ export default {
         clearInterval(tyInt);
       }
     }
+    console.log(this.ss);
   },
 };
 </script>
@@ -58,7 +61,7 @@ export default {
   .typing {
     color: #222;
     font-family: "Montserrat";
-    text-transform: uppercase;
+    // text-transform: uppercase;
     white-space: nowrap;
     font-size: 70px;
     font-weight: 700;
