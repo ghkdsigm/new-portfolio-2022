@@ -252,10 +252,6 @@ export default {
             transition: 0.5s;
           }
         }
-        img {
-          // width: 100%;
-          // height: 100%;
-        }
         .img_box img {
           display: block;
           transition: all 0.4s ease-out 0s;
