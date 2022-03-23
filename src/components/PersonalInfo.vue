@@ -68,16 +68,19 @@
                   <span>HTML5 / CSS3 / SCSS</span>
                 </li>
                 <li>
-                  <span>Javascript / Jquery / Typescript / Vue / Nuxt.js</span>
+                  <span
+                    >Javascript / Jquery / Typescript / Vue / Nuxt.js / Node.js
+                    / Mysql / Firebase</span
+                  >
                 </li>
                 <li>
                   <span>Git / Github / Svn </span>
                 </li>
                 <li>
                   <span
-                    >Eclipse / VSCode / Photoshop / Figma / Powerpoint /
-                    Excel</span
-                  >
+                    >Eclipse / VSCode / Powerpoint / Excel / Photoshop /
+                    illustrator / Atom
+                  </span>
                 </li>
               </ul>
             </div>

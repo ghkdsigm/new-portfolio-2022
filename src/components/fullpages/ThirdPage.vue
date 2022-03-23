@@ -311,10 +311,10 @@ export default {
 }
 
 .modal-header-image-wrapper {
-  height: 40vh;
+  height: 45vh;
   text-align: center;
   position: relative;
-
+  background: #000;
   > img {
     height: 100%;
     width: inherit;

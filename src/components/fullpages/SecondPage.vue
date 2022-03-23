@@ -102,9 +102,9 @@ export default {
           부동산 중개 플랫폼 구해방`,
         },
         {
-          title: "대한탁구협회 홈페이지 유지보수2",
-          image: require("@/assets/images/works/img01_1.png"),
-          innerImage: require("@/assets/images/webs/e01.gif"),
+          title: "한국도핑방지위원회 검사관교육시스템 구축",
+          image: require("@/assets/images/works/img08_1.png"),
+          innerImage: require("@/assets/images/webs/e02.gif"),
           sub: `서브제목`,
           url: "https://github.com/loy124/ProjectRoom",
           tag: "#publising #design",
@@ -113,9 +113,9 @@ export default {
           부동산 중개 플랫폼 구해방`,
         },
         {
-          title: "대한탁구협회 홈페이지 유지보수3",
-          image: require("@/assets/images/works/img01_1.png"),
-          innerImage: require("@/assets/images/webs/e01.gif"),
+          title: "한국프로스포츠협회 홈페이지 구축",
+          image: require("@/assets/images/works/img02_1.png"),
+          innerImage: require("@/assets/images/webs/e03.gif"),
           sub: `서브제목`,
           url: "https://github.com/loy124/ProjectRoom",
           tag: "#publising #design",
@@ -311,10 +311,10 @@ export default {
 }
 
 .modal-header-image-wrapper {
-  height: 40vh;
+  height: 45vh;
   text-align: center;
   position: relative;
-
+  background: #000;
   > img {
     height: 100%;
     width: inherit;
