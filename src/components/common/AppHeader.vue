@@ -5,7 +5,7 @@
       <template>
         <div>
           <router-link
-            to="/home"
+            to="/"
             :style="[$route.name === 'home' ? whiteObject : blackObject]"
             >Home</router-link
           >
