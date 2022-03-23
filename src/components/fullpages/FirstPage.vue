@@ -6,7 +6,9 @@
       <p class="blink">|</p>
     </span>
     <div orientation="right" class="side_Styled">
-      <div class="emailStyled"><a href="">ghkdsigm3@gmail.com</a></div>
+      <div class="emailStyled">
+        <a href="javascript:;">ghkdsigm3@gmail.com</a>
+      </div>
     </div>
   </div>
 </template>
@@ -93,7 +95,7 @@ export default {
   position: absolute;
   bottom: 0px;
   left: auto;
-  right: 40px;
+  right: 120px;
   z-index: 10;
   color: var(--light-slate);
   .emailStyled {
