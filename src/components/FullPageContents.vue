@@ -157,7 +157,7 @@ section {
   overflow: hidden;
 }
 #page-1 {
-  background: linear-gradient(-45deg, #ffffff, #3e8bd3f8, #ffffff, #ffffff);
+  background: linear-gradient(-45deg, #ffffff, #c6d2ddf8, #ffffff, #ffffff);
   background-size: 400% 400%;
   -webkit-animation: gradient 10s infinite;
   animation: gradient 10s infinite;

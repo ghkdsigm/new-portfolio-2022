@@ -6,18 +6,19 @@
           <!-- <div class="modal-header">
             <slot name="header">default header</slot>
           </div>-->
+          <div class="border">
+            <div class="modal-body">
+              <slot name="body">default body</slot>
+            </div>
 
-          <div class="modal-body">
-            <slot name="body">default body</slot>
-          </div>
-
-          <div class="modal-footer">
-            <slot name="footer">
-              default footer
-              <button class="modal-default-button" @click="$emit('close')">
-                OK
-              </button>
-            </slot>
+            <div class="modal-footer">
+              <slot name="footer">
+                default footer
+                <button class="modal-default-button" @click="$emit('close')">
+                  OK
+                </button>
+              </slot>
+            </div>
           </div>
         </div>
       </div>
@@ -40,7 +41,9 @@ export default {};
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.95);
+  background-image: url("~@/assets/images/overlaybg.png");
+  background-repeat: repeat;
+  /* opacity: 0.95; */
   display: table;
   transition: opacity 0.3s ease;
 }
@@ -49,14 +52,19 @@ export default {};
   vertical-align: middle;
 }
 .modal-container {
-  width: 1000px;
+  width: 1100px;
   margin: 0px auto;
-  padding: 20px 30px;
-  background-color: #6868681c;
+  padding: 10px;
+  background-color: #1d1d1d;
   border-radius: 15px;
   /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.33); */
   transition: all 0.3s ease;
   font-family: Helvetica, Arial, sans-serif;
+}
+.modal-container .border {
+  padding: 20px;
+  border: 3px solid #fff;
+  border-radius: 15px;
 }
 .modal-header h3 {
   margin-top: 0;

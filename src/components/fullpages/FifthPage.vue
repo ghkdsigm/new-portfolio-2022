@@ -3,16 +3,16 @@
     <img src="@/assets/images/earth.gif" alt="구 이미지" />
 
     <enlargeable-image
-      src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo1_small.jpg"
-      src_large="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo1_large.jpg"
+      src="https://raw.githubusercontent.com/ghkdsigm/new-portfolio-2022/main/src/assets/images/design/d01.png"
+      src_large="https://raw.githubusercontent.com/ghkdsigm/new-portfolio-2022/main/src/assets/images/design/d01.png"
       trigger="hover"
       class="p01 p"
     >
       <span>팀K리그 vs 유벤투스 전광판운영사업</span>
     </enlargeable-image>
     <enlargeable-image
-      src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo1_small.jpg"
-      src_large="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo1_large.jpg"
+      src="https://raw.githubusercontent.com/ghkdsigm/new-portfolio-2022/main/src/assets/images/design/d01.png"
+      src_large="https://raw.githubusercontent.com/ghkdsigm/new-portfolio-2022/main/src/assets/images/design/d01.png"
       trigger="hover"
       class="p02 p"
     >

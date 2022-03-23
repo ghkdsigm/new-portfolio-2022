@@ -314,7 +314,7 @@ export default {
   height: 45vh;
   text-align: center;
   position: relative;
-  background: #000;
+  background: #2b2b2b;
   > img {
     height: 100%;
     width: inherit;
@@ -329,7 +329,7 @@ export default {
 }
 
 .modal-header-item {
-  color: #f8f8f8f8;
+  color: #ffbd8f;
 }
 
 .m-contents p {
@@ -356,6 +356,7 @@ export default {
   text-align: center;
   color: #bbbbbb;
   font-size: 16px;
+  padding: 0 85px;
 }
 
 .modal-header-github-wrapper {

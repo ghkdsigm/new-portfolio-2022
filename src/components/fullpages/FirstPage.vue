@@ -5,6 +5,9 @@
       <p class="typing" ref="typingtxt"></p>
       <p class="blink">|</p>
     </span>
+    <div orientation="right" class="side_Styled">
+      <div class="emailStyled"><a href="">ghkdsigm3@gmail.com</a></div>
+    </div>
   </div>
 </template>
 
@@ -66,6 +69,9 @@ export default {
     font-size: 70px;
     font-weight: 700;
     overflow: hidden;
+    color: hsla(0, 0%, 95%, 0.01);
+    -webkit-text-stroke: 2px #000;
+    text-stroke: 2px #000;
   }
   .text {
     display: inline;
@@ -80,6 +86,41 @@ export default {
     -moz-animation: blink 1s infinite;
     -o-animation: blink 1s infinite;
     animation: blink 1s infinite;
+  }
+}
+.side_Styled {
+  width: 40px;
+  position: absolute;
+  bottom: 0px;
+  left: auto;
+  right: 40px;
+  z-index: 10;
+  color: var(--light-slate);
+  .emailStyled {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+    a {
+      margin: 20px auto;
+      padding: 10px;
+      font-family: var(--font-mono);
+      font-size: var(--fz-xxs);
+      line-height: var(--fz-lg);
+      letter-spacing: 0.1em;
+      -webkit-writing-mode: vertical-rl;
+      writing-mode: vertical-rl;
+      font-size: 14px;
+      &::after {
+        content: "";
+        display: block;
+        width: 1px;
+        height: 90px;
+        margin: 0px auto;
+        background-color: var(--light-slate);
+      }
+    }
   }
 }
 </style>
