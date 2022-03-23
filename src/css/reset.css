@@ -35,7 +35,7 @@ button {
 	font-family: inherit;
 	font-size: 90%;
 	margin: 0;
-	cursor: pointer;
+	cursor: inherit;
 }
 
 *,
@@ -44,3 +44,5 @@ button {
 	box-sizing: border-box;
 	font-family: 'Spoqa Han Sans', 'Sans-serif';
 }
+
+a{cursor:inherit;}
