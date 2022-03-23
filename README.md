@@ -1,8 +1,8 @@
 # 2022 포트폴리오
 
-## Project setup
+## 배포페이지 바로가기
 ```
-npm install
+https://mottohportfolio.shop/
 ```
 
 ### Compiles and hot-reloads for development
