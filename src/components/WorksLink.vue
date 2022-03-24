@@ -14,10 +14,7 @@
       >
         <span> 수행 프로젝트 보기 </span>
       </a> -->
-      <router-link
-        to="/works"
-        class="workbtn"
-        :style="[$route.name === 'work' ? blackObject : whiteObject]"
+      <router-link to="/works" class="workbtn"
         ><span> 수행 프로젝트 보기 </span></router-link
       >
     </div>
