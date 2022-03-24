@@ -3,8 +3,8 @@
     <img src="@/assets/images/earth.gif" alt="구 이미지" />
 
     <enlargeable-image
-      src="https://raw.githubusercontent.com/ghkdsigm/new-portfolio-2022/main/src/assets/images/design/d01.png"
-      src_large="https://raw.githubusercontent.com/ghkdsigm/new-portfolio-2022/main/src/assets/images/design/d01.png"
+      src="https://raw.githubusercontent.com/ghkdsigm/new-portfolio-2022/main/src/assets/images/design/d01.gif"
+      src_large="https://raw.githubusercontent.com/ghkdsigm/new-portfolio-2022/main/src/assets/images/design/d01.gif"
       trigger="hover"
       class="p01 p"
     >
@@ -19,8 +19,8 @@
       <span>대한체육회 100주년 공모전 포스터 제작</span>
     </enlargeable-image>
     <enlargeable-image
-      src="https://raw.githubusercontent.com/ghkdsigm/new-portfolio-2022/main/src/assets/images/design/d03.png"
-      src_large="https://raw.githubusercontent.com/ghkdsigm/new-portfolio-2022/main/src/assets/images/design/d03.png"
+      src="https://raw.githubusercontent.com/ghkdsigm/new-portfolio-2022/main/src/assets/images/design/d03.gif"
+      src_large="https://raw.githubusercontent.com/ghkdsigm/new-portfolio-2022/main/src/assets/images/design/d03.gif"
       trigger="hover"
       class="p03 p"
     >
