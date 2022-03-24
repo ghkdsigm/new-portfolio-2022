@@ -151,7 +151,7 @@
           content: "<h2>";
           font-family: "La Belle Aurore", cursive;
           color: #bababa;
-          font-size: 1.3rem;
+          font-size: 1.5rem;
           position: absolute;
           display: block;
           top: -40px;
@@ -160,7 +160,7 @@
           content: "</h2>";
           font-family: "La Belle Aurore", cursive;
           color: #bababa;
-          font-size: 1.3rem;
+          font-size: 1.5rem;
           position: absolute;
           display: block;
         }

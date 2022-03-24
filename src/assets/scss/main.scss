@@ -145,6 +145,7 @@ $container-max-widths: (
     -moz-transition-delay: 0s;
     -o-transition-delay: 0s;
     transition-delay: 0s;
+    opacity: 0;
   }
   .pg-active {
     .Mh1 {
@@ -153,6 +154,9 @@ $container-max-widths: (
       -moz-transition-delay: .2s;
       -o-transition-delay: .2s;
       transition-delay: .2s;
+      bottom:95px;
+      right:120px;
+      opacity: 1;
     }
   
     .Mh2 {
@@ -161,6 +165,9 @@ $container-max-widths: (
       -moz-transition-delay: .4s;
       -o-transition-delay: .4s;
       transition-delay: .4s;
+      bottom:40px;
+      right:120px;
+      opacity:1;
     }
   }
 // Required

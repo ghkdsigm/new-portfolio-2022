@@ -89,6 +89,25 @@ export default {
         slidesOffsetBefore: 0, // slidesOffsetBefore는 첫번째 슬라이드의 시작점에 대한 변경할 때 사용
         slidesOffsetAfter: 0, // slidesOffsetAfter는 마지막 슬라이드 시작점 + 마지막 슬라이드 너비에 해당하는 위치의 변경이 필요할 때 사용
         centerInsufficientSlides: false, // 컨텐츠의 수량에 따라 중앙정렬 여부를 결정함
+        // 반응형 breakpoints
+        breakpoints: {
+          375: {
+            slidesPerView: 1,
+          },
+          425: {
+            slidesPerView: 1,
+          },
+          768: {
+            slidesPerView: 1,
+          },
+          1024: {
+            slidesPerView: 1,
+          },
+          1400: {
+            slidesPerView: 2,
+            slidesPerGroup: 2,
+          },
+        },
       },
 
       portfolios: [
