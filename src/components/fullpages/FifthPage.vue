@@ -27,20 +27,20 @@
       <span>스카이워커 배구단 전광판운영사업</span>
     </enlargeable-image>
     <enlargeable-image
-      src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo1_small.jpg"
-      src_large="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo1_large.jpg"
+      src="https://raw.githubusercontent.com/ghkdsigm/new-portfolio-2022/main/src/assets/images/design/d06.png"
+      src_large="https://raw.githubusercontent.com/ghkdsigm/new-portfolio-2022/main/src/assets/images/design/d06.png"
       trigger="hover"
       class="p04 p"
     >
       <span>경기도시장상권진흥원 리플렛 제작</span>
     </enlargeable-image>
     <enlargeable-image
-      src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo1_small.jpg"
-      src_large="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo1_large.jpg"
+      src="https://raw.githubusercontent.com/ghkdsigm/new-portfolio-2022/main/src/assets/images/design/d05.png"
+      src_large="https://raw.githubusercontent.com/ghkdsigm/new-portfolio-2022/main/src/assets/images/design/d05.png"
       trigger="hover"
       class="p05 p"
     >
-      <span>스카이워커 배구단 전광판운영사업</span>
+      <span>스포츠영웅 후보자 추천</span>
     </enlargeable-image>
     <enlargeable-image
       src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo1_small.jpg"
