@@ -16,7 +16,7 @@
       trigger="hover"
       class="p02 p"
     >
-      <span>스카이워커 배구단 전광판운영사업</span>
+      <span>대한체육회 100주년 공모전 포스터 제작</span>
     </enlargeable-image>
     <enlargeable-image
       src="https://raw.githubusercontent.com/ghkdsigm/new-portfolio-2022/main/src/assets/images/design/d03.png"
@@ -24,7 +24,7 @@
       trigger="hover"
       class="p03 p"
     >
-      <span>대한체육회 100주년 공모전 포스터 제작</span>
+      <span>스카이워커 배구단 전광판운영사업</span>
     </enlargeable-image>
     <enlargeable-image
       src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo1_small.jpg"
