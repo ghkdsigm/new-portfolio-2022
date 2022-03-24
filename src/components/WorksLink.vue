@@ -6,14 +6,20 @@
     ref="addOn"
   >
     <div class="workbtnWrap">
-      <a
+      <!-- <a
         href="/works"
         title="포트폴리오 페이지 바로가기"
         class="workbtn"
         target="_blank"
       >
         <span> 수행 프로젝트 보기 </span>
-      </a>
+      </a> -->
+      <router-link
+        to="/works"
+        class="workbtn"
+        :style="[$route.name === 'work' ? blackObject : whiteObject]"
+        ><span> 수행 프로젝트 보기 </span></router-link
+      >
     </div>
   </div>
 </template>
