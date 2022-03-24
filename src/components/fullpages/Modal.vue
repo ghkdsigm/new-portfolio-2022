@@ -3,22 +3,21 @@
     <div class="modal-mask">
       <div class="modal-wrapper">
         <div class="modal-container">
-          <!-- <div class="modal-header">
-            <slot name="header">default header</slot>
-          </div>-->
+          <div class="modal-header">
+            <slot name="header">
+              default footer
+              <button class="modal-default-button" @click="$emit('close')">
+                OK
+              </button>
+            </slot>
+          </div>
           <div class="border">
             <div class="modal-body">
               <slot name="body">default body</slot>
             </div>
-
-            <div class="modal-footer">
-              <slot name="footer">
-                default footer
-                <button class="modal-default-button" @click="$emit('close')">
-                  OK
-                </button>
-              </slot>
-            </div>
+          </div>
+          <div class="modal-footer">
+            <slot name="footer" class="footercont"> </slot>
           </div>
         </div>
       </div>
@@ -54,7 +53,7 @@ export default {};
 .modal-container {
   width: 1100px;
   margin: 0px auto;
-  padding: 10px;
+  padding: 15px;
   background-color: #1d1d1d;
   border-radius: 15px;
   /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.33); */
@@ -75,6 +74,30 @@ export default {};
 }
 .modal-default-button {
   float: right;
+}
+.modal-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: #2b2b2b;
+  left: 0;
+}
+.modal-footer a {
+  width: 100%;
+  height: 100%;
+  display: block;
+  text-align: center;
+  position: relative;
+  padding: 15px 0;
+  color: #fff;
+  font-weight: bold;
+  font-size: 15px;
+}
+.modal-footer:hover {
+  background: #ffbd8f;
+}
+.modal-footer:hover a {
+  color: #000;
 }
 /*
  * The following styles are auto-applied to elements with

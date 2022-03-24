@@ -127,7 +127,7 @@
         padding: 0;
         li {
           font-size: 16px;
-          line-height: 30px;
+          line-height: 34px;
           font-weight: 300;
           letter-spacing: 0.3px;
         }
@@ -145,8 +145,25 @@
         font-size: 25px;
         color: #000;
         line-height: 38px;
-        padding: 0 0 30px 0;
+        padding: 0 0 50px 0;
         font-weight: 300;
+        &:before {
+          content: "<h2>";
+          font-family: "La Belle Aurore", cursive;
+          color: #bababa;
+          font-size: 1.3rem;
+          position: absolute;
+          display: block;
+          top: -40px;
+        }
+        &:after {
+          content: "</h2>";
+          font-family: "La Belle Aurore", cursive;
+          color: #bababa;
+          font-size: 1.3rem;
+          position: absolute;
+          display: block;
+        }
         b {
           font-size: 30px;
           color: #000;

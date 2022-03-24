@@ -54,7 +54,9 @@
           <p><b>참 여 도 :</b>{{ modalData.party }}</p>
         </div>
       </div>
-      <div slot="footer"></div>
+      <div slot="footer">
+        <a :href="modalData.url" target="_blank">사이트 바로가기</a>
+      </div>
     </Modal>
 
     <h1 class="Mh1" style="color: #222">신규 구축 &amp; 운영</h1>

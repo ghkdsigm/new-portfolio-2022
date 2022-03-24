@@ -79,7 +79,8 @@ export default {};
     }
     .Bline {
       display: inline-block;
-      font-family: "Noto Sans KR";
+      // font-family: "Noto Sans KR";
+      font-family: "La Belle Aurore";
       font-weight: 100;
       font-size: 20px;
       padding-left: 20px;
