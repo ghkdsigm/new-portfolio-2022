@@ -11,8 +11,8 @@
       <span>팀K리그 vs 유벤투스 전광판운영사업</span>
     </enlargeable-image>
     <enlargeable-image
-      src="https://raw.githubusercontent.com/ghkdsigm/new-portfolio-2022/main/src/assets/images/design/d04.png"
-      src_large="https://raw.githubusercontent.com/ghkdsigm/new-portfolio-2022/main/src/assets/images/design/d04.png"
+      src="https://raw.githubusercontent.com/ghkdsigm/new-portfolio-2022/main/src/assets/images/design/d04.jpg"
+      src_large="https://raw.githubusercontent.com/ghkdsigm/new-portfolio-2022/main/src/assets/images/design/d04.jpg"
       trigger="hover"
       class="p02 p"
     >
@@ -35,8 +35,8 @@
       <span>경기도시장상권진흥원 리플렛 제작</span>
     </enlargeable-image>
     <enlargeable-image
-      src="https://raw.githubusercontent.com/ghkdsigm/new-portfolio-2022/main/src/assets/images/design/d05.png"
-      src_large="https://raw.githubusercontent.com/ghkdsigm/new-portfolio-2022/main/src/assets/images/design/d05.png"
+      src="https://raw.githubusercontent.com/ghkdsigm/new-portfolio-2022/main/src/assets/images/design/d05.jpg"
+      src_large="https://raw.githubusercontent.com/ghkdsigm/new-portfolio-2022/main/src/assets/images/design/d05.jpg"
       trigger="hover"
       class="p05 p"
     >
