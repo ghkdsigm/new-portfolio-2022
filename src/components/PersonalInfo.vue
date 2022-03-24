@@ -63,7 +63,7 @@
             </div>
             <div class="career">
               <h5>Skills / Tools</h5>
-              <ul>
+              <ul class="mytools">
                 <li>
                   <span>HTML5 / CSS3 / SCSS</span>
                 </li>
@@ -127,7 +127,7 @@
         padding: 0;
         li {
           font-size: 16px;
-          line-height: 34px;
+          line-height: 36px;
           font-weight: 300;
           letter-spacing: 0.3px;
         }
@@ -180,8 +180,9 @@
         ul {
           padding: 0;
           li {
+            padding: 10px 0 0;
             &:first-child {
-              padding: 5px 0 0;
+              padding: 15px 0 0;
             }
             span {
               color: #000;
@@ -189,8 +190,16 @@
               font-size: 18px;
               &:first-child {
                 padding-right: 20px;
-                font-weight: 400;
+                font-weight: 500;
               }
+            }
+          }
+        }
+        .mytools {
+          li {
+            span {
+              color: #000;
+              font-weight: 400 !important;
             }
           }
         }

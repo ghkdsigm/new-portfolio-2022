@@ -92,7 +92,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .particle {
   width: 100%;
   height: 100%;
@@ -101,6 +101,7 @@ export default {
   left: 0;
   z-index: -1;
 }
+
 .particles-background {
   position: absolute;
   top: 0;
@@ -114,93 +115,112 @@ export default {
   opacity: 0.25;
   margin: 0 auto;
 }
+
 img {
   mix-blend-mode: exclusion;
 }
-.enlargeable-image .enlargeable-image-slot {
-  display: inline-block;
-  z-index: 10;
+
+.enlargeable-image {
+  .enlargeable-image-slot {
+    display: inline-block;
+    z-index: 10;
+
+    > img {
+      max-width: 100%;
+    }
+  }
+
+  > .enlargeable-image-slot {
+    max-width: 100%;
+    max-height: 100%;
+    cursor: zoom-in;
+
+    &.active {
+      opacity: 0.3;
+      filter: grayscale(100%);
+    }
+  }
+
+  .enlargeable-image-full {
+    cursor: zoom-out;
+    background-color: transparent;
+    align-items: center;
+    justify-content: center;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 2000;
+    display: none;
+
+    > img {
+      object-fit: contain;
+      width: 100%;
+      height: 100%;
+    }
+
+    &.enlarging {
+      display: flex;
+      position: fixed;
+      left: 0px;
+      top: 0px;
+      width: 100%;
+      height: 100%;
+      background-color: transparent;
+      cursor: zoom-out;
+    }
+
+    &.delarging {
+      display: flex;
+      position: fixed;
+      left: 0px;
+      top: 0px;
+      width: 100%;
+      height: 100%;
+      background-color: transparent;
+      cursor: zoom-in;
+    }
+
+    &.enlarged {
+      display: flex;
+    }
+  }
 }
-.enlargeable-image .enlargeable-image-slot > img {
-  max-width: 100%;
-}
-.enlargeable-image > .enlargeable-image-slot {
-  max-width: 100%;
-  max-height: 100%;
-  cursor: zoom-in;
-}
-.enlargeable-image > .enlargeable-image-slot.active {
-  opacity: 0.3;
-  filter: grayscale(100%);
-}
-.enlargeable-image .enlargeable-image-full {
-  cursor: zoom-out;
-  background-color: transparent;
-  align-items: center;
-  justify-content: center;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  z-index: 2000;
-  display: none;
-}
-.enlargeable-image .enlargeable-image-full > img {
-  object-fit: contain;
-  width: 100%;
-  height: 100%;
-}
-.enlargeable-image .enlargeable-image-full.enlarging {
-  display: flex;
-  position: fixed;
-  left: 0px;
-  top: 0px;
-  width: 100%;
-  height: 100%;
-  background-color: transparent;
-  cursor: zoom-out;
-}
-.enlargeable-image .enlargeable-image-full.delarging {
-  display: flex;
-  position: fixed;
-  left: 0px;
-  top: 0px;
-  width: 100%;
-  height: 100%;
-  background-color: transparent;
-  cursor: zoom-in;
-}
-.enlargeable-image .enlargeable-image-full.enlarged {
-  display: flex;
-}
+
 .p {
   font-size: 15px;
   color: #fff;
 }
+
 .p01 {
   position: absolute;
   top: 200px;
   left: 500px;
 }
+
 .p02 {
   position: absolute;
   bottom: 120px;
   left: 500px;
 }
+
 .p03 {
   position: absolute;
   top: 400px;
   right: 500px;
 }
+
 .p04 {
   position: absolute;
   right: 250px;
   bottom: 300px;
 }
+
 .p05 {
   position: absolute;
   top: 150px;
   right: 200px;
 }
+
 .p06 {
   position: absolute;
   left: 200px;

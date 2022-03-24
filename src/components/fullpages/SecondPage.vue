@@ -54,7 +54,7 @@
           <p><b>참 여 도 :</b>{{ modalData.party }}</p>
         </div>
       </div>
-      <div slot="footer">
+      <div slot="footer" class="footerLink">
         <a :href="modalData.url" target="_blank">사이트 바로가기</a>
       </div>
     </Modal>
@@ -385,5 +385,26 @@ export default {
 .modal-headet-item-content {
   color: #f8f8f8f8;
   font-size: 22px;
+}
+
+.footerLink {
+  width: 100%;
+  height: 100%;
+  a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    text-align: center;
+    position: relative;
+    padding: 15px 0;
+    color: #fff;
+    font-weight: bold;
+    font-size: 15px;
+  }
+  &:hover {
+    a {
+      color: #000;
+    }
+  }
 }
 </style>

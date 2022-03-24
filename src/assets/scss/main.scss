@@ -1,3 +1,5 @@
+@import "./media";
+@import "./reset";
 // Default variable overrides
 $primary:royalblue;
 
@@ -60,15 +62,14 @@ $primary:royalblue;
 }
 
 @keyframes blink {
-to {
-    opacity: .0;
-}
+    to {
+        opacity: .0;
+    }
 }
 @-webkit-keyframes bg-scrolling-reverse{to{background-position:120px 120px}}
 @keyframes bg-scrolling-reverse{to{background-position:120px 120px}}
 @keyframes bg-scrolling{0%{background-position:120px 120px}}
 
-   
 $container-max-widths: (
     sm:540px,
     md:704px,
@@ -78,12 +79,93 @@ $container-max-widths: (
 );
 
 
+  body {
+    background: #F7F6F9;
+    margin:0;
+  }
+  
+  .app {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    font-size: 1.4rem;
+  }
+  h1 {
+    text-align: center;
+    font-weight: 100;
+  }
+  
+  h5 {
+    margin: 0;
+  }
+  a {
+    color: #364f6b;
+    text-decoration: none;
+  
+    &:hover {
+      color: #3fc1c9;
+    }
+  }
+  .container {
+    max-width: 1400px;
+  }
+
+  .Mh1 {
+    position: absolute;
+    display: block;
+    font-size: 70px;
+    height: 80px;
+    text-transform: uppercase;
+    font-weight: 700;
+    overflow: hidden;
+    line-height: 400px;
+    -webkit-transition: line-height 0.55s cubic-bezier(0.77, 0, 0.175, 1);
+    -moz-transition: line-height 0.55s cubic-bezier(0.77, 0, 0.175, 1);
+    -o-transition: line-height 0.55s cubic-bezier(0.77, 0, 0.175, 1);
+    transition: line-height 0.55s cubic-bezier(0.77, 0, 0.175, 1);
+  }
+  
+  .Mh2 {
+    position: absolute;
+    font-family: 'Lato', sans-serif;
+    font-size: 50px;
+    height: 50px;
+    text-transform: uppercase;
+    font-weight: 300;
+    overflow: hidden;
+    line-height: 5;
+    -webkit-transition: line-height 0.55s cubic-bezier(0.77, 0, 0.175, 1);
+    -moz-transition: line-height 0.55s cubic-bezier(0.77, 0, 0.175, 1);
+    -o-transition: line-height 0.55s cubic-bezier(0.77, 0, 0.175, 1);
+    transition: line-height 0.55s cubic-bezier(0.77, 0, 0.175, 1);
+  }
+
+  .Mh1, .Mh2 {
+    -webkit-transition-delay: 0s;
+    -moz-transition-delay: 0s;
+    -o-transition-delay: 0s;
+    transition-delay: 0s;
+  }
+  .pg-active {
+    .Mh1 {
+      line-height: 80px;
+      -webkit-transition-delay: .2s;
+      -moz-transition-delay: .2s;
+      -o-transition-delay: .2s;
+      transition-delay: .2s;
+    }
+  
+    .Mh2 {
+      line-height: 1;
+      -webkit-transition-delay: .4s;
+      -moz-transition-delay: .4s;
+      -o-transition-delay: .4s;
+      transition-delay: .4s;
+    }
+  }
 // Required
 // @import "../../node_modules/bootstrap/scss/functions";
 // @import "../../node_modules/bootstrap/scss/variables";
 // @import "../../node_modules/bootstrap/scss/mixins";
-
-
-
 // @import "../../node_modules/bootstrap/scss/bootstrap";
 

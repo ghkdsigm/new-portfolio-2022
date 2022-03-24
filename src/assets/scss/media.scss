@@ -25,6 +25,24 @@
   @media (max-width: 890px) {
     
   }
+
+  @media screen and (min-width: 700px) {
+    .Mh1 {
+      bottom: 95px;
+      right: 120px;
+    }
+  
+    .Mh2 {
+      bottom: 40px;
+      right: 120px;
+    }
+  }
+  
+  @media screen and (max-width: 700px) {
+    .Mh1, .Mh2 {
+      display: none;
+    }
+  }
   
   @media (max-width: 550px) {
     
