@@ -12,6 +12,7 @@
           <router-link
             to="/works"
             :style="[$route.name === 'work' ? blackObject : whiteObject]"
+            :class="$route.name === 'work' && 'router-link-exact-active'"
             >Works</router-link
           >
         </div>

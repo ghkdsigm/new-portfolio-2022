@@ -15,11 +15,6 @@
 
 <script>
 export default {
-  data() {
-    return {
-      ss: this.$route,
-    };
-  },
   mounted() {
     var typingBool = false;
     var typingIdx = 0;
@@ -48,7 +43,6 @@ export default {
         clearInterval(tyInt);
       }
     }
-    console.log(this.ss);
   },
 };
 </script>
