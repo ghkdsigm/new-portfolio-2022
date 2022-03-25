@@ -15,7 +15,7 @@
       </div>
       <div class="formGroup">
         <label>Message</label>
-        <textarea name="message" ref="message"></textarea>
+        <textarea name="message" ref="message" rows="5"></textarea>
       </div>
       <input type="submit" value="Send" class="button" />
     </form>
