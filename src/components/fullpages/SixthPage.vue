@@ -4,20 +4,20 @@
     <p>
       문의글이나 관심글은 아래 입력란에 작성 후 보내주시면 감사하겠습니다. :)
     </p>
-    <form action="">
+    <form id="myform" ref="form" @submit.prevent="sendEmail">
       <div class="formGroup">
-        <label for="name"></label>
-        <input type="text" id="name" placeholder="Name" />
+        <label>Name</label>
+        <input type="text" name="user_name" />
       </div>
       <div class="formGroup">
-        <label for="email"></label>
-        <input type="text" id="email" placeholder="Email" />
+        <label>Email</label>
+        <input type="email" name="user_email" />
       </div>
       <div class="formGroup">
-        <label for="context"></label>
-        <textarea type="text" id="context" placeholder="Message" rows="1" />
+        <label>Message</label>
+        <textarea name="message"></textarea>
       </div>
-      <button type="button">Send</button>
+      <input type="submit" value="Send" class="button" />
     </form>
     <div class="contact_info">
       <span
@@ -63,7 +63,40 @@
 </template>
 
 <script>
-export default {};
+import emailjs from "@emailjs/browser";
+export default {
+  data() {
+    return {
+      service_id: process.env.VUE_APP_SERVICE_ID,
+      template_id: process.env.VUE_APP_TEMPLATE_ID,
+      user_id: process.env.VUE_APP_USER_ID,
+      template_params: {
+        username: "James",
+        "g-recaptcha-response": "03AHJ_ASjnLA214KSNKFJAK12sfKASfehbmfd...",
+      },
+    };
+  },
+  methods: {
+    sendEmail(e) {
+      e.preventDefault();
+      emailjs
+        .sendForm(
+          this.service_id,
+          this.template_id,
+          this.$refs.form,
+          this.user_id,
+        )
+        .then(
+          result => {
+            console.log("SUCCESS!", result.text);
+          },
+          error => {
+            console.log("FAILED...", error.text);
+          },
+        );
+    },
+  },
+};
 </script>
 
 <style lang="scss" scoped>
@@ -97,6 +130,7 @@ p {
   }
   label {
     color: #fff;
+    display: block;
   }
   input {
     outline: none;
@@ -131,7 +165,7 @@ p {
     }
   }
 }
-button {
+.button {
   background-color: unset;
   border-radius: 20px;
   border: 1px solid #c3c3c3;

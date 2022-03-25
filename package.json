@@ -10,8 +10,11 @@
   },
   "dependencies": {
     "@diracleo/vue-enlargeable-image": "0.0.7",
+    "@emailjs/browser": "^3.4.0",
     "axios": "^0.26.1",
     "core-js": "^3.6.5",
+    "dotenv": "^16.0.0",
+    "emailjs-com": "^3.2.0",
     "magicmouse.js": "^1.2.1",
     "pageable": "^0.6.8",
     "sass-loader": "^10.2.1",
