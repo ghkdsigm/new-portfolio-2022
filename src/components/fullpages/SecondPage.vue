@@ -164,7 +164,7 @@ export default {
         {
           title: "한국프로축구연맹(KLEAGUE) 심판관리시스템(KRMS) 구축",
           image: require("@/assets/images/works/img09_1.png"),
-          innerImage: require("@/assets/images/webs/e05.gif"),
+          innerImage: require("@/assets/images/webs/e04.gif"),
           sub: `서브제목`,
           url: "https://github.com/loy124/ProjectRoom",
           tag: "#publising #design",
