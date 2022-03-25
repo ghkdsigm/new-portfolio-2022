@@ -67,9 +67,9 @@ import emailjs from "@emailjs/browser";
 export default {
   data() {
     return {
-      service_id: "service_4jeyswq",
-      template_id: "template_71ny156",
-      user_id: "SqgrIPyM9PrS4Gl2X",
+      service_id: process.env.VUE_APP_SERVICE_ID,
+      template_id: process.env.VUE_APP_TEMPLATE_ID,
+      user_id: process.env.VUE_APP_USER_ID,
       template_params: {
         username: "James",
         "g-recaptcha-response": "03AHJ_ASjnLA214KSNKFJAK12sfKASfehbmfd...",
@@ -77,13 +77,14 @@ export default {
     };
   },
   methods: {
-    sendEmail() {
+    sendEmail(e) {
+      e.preventDefault();
       emailjs
         .sendForm(
-          "service_4jeyswq",
-          "template_71ny156",
+          this.service_id,
+          this.template_id,
           this.$refs.form,
-          "SqgrIPyM9PrS4Gl2X",
+          this.user_id,
         )
         .then(
           result => {
@@ -94,6 +95,9 @@ export default {
           },
         );
     },
+  },
+  mounted() {
+    console.log(process.env.VUE_APP_USER_ID);
   },
 };
 </script>
@@ -129,6 +133,7 @@ p {
   }
   label {
     color: #fff;
+    display: block;
   }
   input {
     outline: none;
