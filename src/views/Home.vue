@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="section01 sect">
+    <div class="section01 sect" id="top">
       <Headline>
         <a class="Aline" slot="s_title">
           <span class>Portfolio </span>
@@ -46,6 +46,7 @@
     <div class="section06">
       <AppFooter />
     </div>
+    <a @click="scrollTop" v-show="visible" class="bottom-right"> Top </a>
   </div>
 </template>
 
@@ -67,6 +68,24 @@ export default {
     Skills,
     WorksLink,
     AppFooter,
+  },
+  data() {
+    return {
+      visible: false,
+    };
+  },
+  methods: {
+    scrollTop() {
+      this.intervalId = setInterval(() => {
+        if (window.pageYOffset === 0) {
+          clearInterval(this.intervalId);
+        }
+        window.scroll(0, window.pageYOffset - 50);
+      }, 5);
+    },
+    scrollListener(e) {
+      this.visible = window.scrollY > 1000;
+    },
   },
   mounted() {
     var canvas = document.querySelector("canvas");
@@ -211,6 +230,12 @@ export default {
       document.removeEventListener("touchmove", onTouchMove);
       document.removeEventListener("touchend", onTouchEnd);
     }
+  },
+  beforeMount() {
+    window.addEventListener("scroll", this.scrollListener);
+  },
+  beforeDestroy() {
+    window.removeEventListener("scroll", this.scrollListener);
   },
 };
 </script>
@@ -386,5 +411,23 @@ export default {
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
+}
+
+.bottom-right {
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+  z-index: 9999;
+  background: #000;
+  color: #fff;
+  padding: 20px;
+  border-radius: 55%;
+  align-items: center;
+  font-weight: 500;
+  font-size: 1.2rem;
+  border: 1px solid #fff;
+  &:hover {
+    border: 1px solid #3fc1c9;
+  }
 }
 </style>

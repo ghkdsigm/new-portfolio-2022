@@ -54,12 +54,12 @@
           <p><b>참 여 도 :</b>{{ modalData.party }}</p>
         </div>
       </div>
-      <div slot="footer">
+      <div slot="footer" class="footerLink">
         <a :href="modalData.url" target="_blank">사이트 바로가기</a>
       </div>
     </Modal>
 
-    <h1 class="Mh1" style="color: #222">프론트엔드 &amp; 프로젝트</h1>
+    <h1 class="Mh1" style="color: #222">프론트엔드 프로젝트</h1>
     <h2 class="Mh2" style="color: #222">FRONTEND.</h2>
   </div>
 </template>
@@ -80,7 +80,12 @@ export default {
       swiperOptions: {
         slidesPerView: 2,
         spaceBetween: 50,
-        freeMode: false,
+        freeMode: true,
+        freeModeSticky: false,
+        scrollbar: ".sw-scroll1",
+        scrollbarHide: true,
+        scrollbarDraggable: true,
+        grabCursor: true,
         loop: false,
         pagination: {
           type: "progressbar",
@@ -89,6 +94,24 @@ export default {
         slidesOffsetBefore: 0, // slidesOffsetBefore는 첫번째 슬라이드의 시작점에 대한 변경할 때 사용
         slidesOffsetAfter: 0, // slidesOffsetAfter는 마지막 슬라이드 시작점 + 마지막 슬라이드 너비에 해당하는 위치의 변경이 필요할 때 사용
         centerInsufficientSlides: false, // 컨텐츠의 수량에 따라 중앙정렬 여부를 결정함
+        breakpoints: {
+          375: {
+            slidesPerView: 1,
+          },
+          425: {
+            slidesPerView: 1,
+          },
+          768: {
+            slidesPerView: 1,
+          },
+          1024: {
+            slidesPerView: 1,
+          },
+          1400: {
+            slidesPerView: 2,
+            slidesPerGroup: 2,
+          },
+        },
       },
 
       portfolios: [
@@ -148,11 +171,11 @@ export default {
           부동산 중개 플랫폼 구해방`,
         },
         {
-          title: "대한탁구협회 홈페이지 유지보수3",
+          title: "대한탁구협회 홈페이지 유지보수13",
           image: require("@/assets/images/works/img01_1.png"),
           innerImage: require("@/assets/images/webs/e01.gif"),
           sub: `서브제목`,
-          url: "https://github.com/loy124/ProjectRoom",
+          url: "https://amazing-jepsen-0b0d0e.netlify.app/",
           tag: "#publising #design",
           party: `100%`,
           content: `Spring boot + Vue.js(CLI) + Mybatis + MySql(AWS EC2)) + AWS S3(이미지및 파일서버)를 활용한
@@ -385,5 +408,26 @@ export default {
 .modal-headet-item-content {
   color: #f8f8f8f8;
   font-size: 22px;
+}
+
+.footerLink {
+  width: 100%;
+  height: 100%;
+  a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    text-align: center;
+    position: relative;
+    padding: 15px 0;
+    color: #fff;
+    font-weight: bold;
+    font-size: 15px;
+  }
+  &:hover {
+    a {
+      color: #000;
+    }
+  }
 }
 </style>

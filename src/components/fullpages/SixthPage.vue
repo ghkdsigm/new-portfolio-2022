@@ -95,6 +95,7 @@ export default {
                 "메일이 성공적으로 보내졌습니다. 확인 후 답변드리겠습니다 :)",
                 result.text,
               );
+              this.$refs.form.reset();
             },
             error => {
               alert(
