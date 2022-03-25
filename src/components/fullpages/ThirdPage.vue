@@ -54,7 +54,7 @@
           <p><b>참 여 도 :</b>{{ modalData.party }}</p>
         </div>
       </div>
-      <div slot="footer">
+      <div slot="footer" class="footerLink">
         <a :href="modalData.url" target="_blank">사이트 바로가기</a>
       </div>
     </Modal>
@@ -89,6 +89,24 @@ export default {
         slidesOffsetBefore: 0, // slidesOffsetBefore는 첫번째 슬라이드의 시작점에 대한 변경할 때 사용
         slidesOffsetAfter: 0, // slidesOffsetAfter는 마지막 슬라이드 시작점 + 마지막 슬라이드 너비에 해당하는 위치의 변경이 필요할 때 사용
         centerInsufficientSlides: false, // 컨텐츠의 수량에 따라 중앙정렬 여부를 결정함
+        breakpoints: {
+          375: {
+            slidesPerView: 1,
+          },
+          425: {
+            slidesPerView: 1,
+          },
+          768: {
+            slidesPerView: 1,
+          },
+          1024: {
+            slidesPerView: 1,
+          },
+          1400: {
+            slidesPerView: 2,
+            slidesPerGroup: 2,
+          },
+        },
       },
 
       portfolios: [
@@ -385,5 +403,26 @@ export default {
 .modal-headet-item-content {
   color: #f8f8f8f8;
   font-size: 22px;
+}
+
+.footerLink {
+  width: 100%;
+  height: 100%;
+  a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    text-align: center;
+    position: relative;
+    padding: 15px 0;
+    color: #fff;
+    font-weight: bold;
+    font-size: 15px;
+  }
+  &:hover {
+    a {
+      color: #000;
+    }
+  }
 }
 </style>
