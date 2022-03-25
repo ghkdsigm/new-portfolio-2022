@@ -7,15 +7,15 @@
     <form id="myform" ref="form" @submit.prevent="sendEmail">
       <div class="formGroup">
         <label>Name</label>
-        <input type="text" name="user_name" />
+        <input type="text" name="user_name" ref="name" />
       </div>
       <div class="formGroup">
         <label>Email</label>
-        <input type="email" name="user_email" />
+        <input type="email" name="user_email" ref="email" />
       </div>
       <div class="formGroup">
         <label>Message</label>
-        <textarea name="message"></textarea>
+        <textarea name="message" ref="message"></textarea>
       </div>
       <input type="submit" value="Send" class="button" />
     </form>
@@ -77,27 +77,36 @@ export default {
     };
   },
   methods: {
-    sendEmail(e) {
-      e.preventDefault();
-      emailjs
-        .sendForm(
-          this.service_id,
-          this.template_id,
-          this.$refs.form,
-          this.user_id,
-        )
-        .then(
-          result => {
-            console.log("SUCCESS!", result.text);
-          },
-          error => {
-            console.log("FAILED...", error.text);
-          },
-        );
+    sendEmail() {
+      const formName = this.$refs.name.value;
+      const formEmail = this.$refs.email.value;
+      const formMessage = this.$refs.message.value;
+      if (formName !== "" && formEmail !== "" && formMessage !== "") {
+        emailjs
+          .sendForm(
+            this.service_id,
+            this.template_id,
+            this.$refs.form,
+            this.user_id,
+          )
+          .then(
+            result => {
+              alert(
+                "메일이 성공적으로 보내졌습니다. 확인 후 답변드리겠습니다 :)",
+                result.text,
+              );
+            },
+            error => {
+              alert(
+                "전송에 실패하였습니다 확인 후 다시 시도해주세요",
+                error.text,
+              );
+            },
+          );
+      } else {
+        alert("내용을 입력후 메일을 보내주세요");
+      }
     },
-  },
-  mounted() {
-    console.log(process.env.VUE_APP_USER_ID);
   },
 };
 </script>
