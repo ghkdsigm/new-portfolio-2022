@@ -19,13 +19,13 @@
         class="workingImg Nondraggable"
         alt="작업영상"
       />
-      <div class="scrollIcon">
-        <a href="#footer" class="up"><span></span><span></span></a>
-        <a href="#"><span class="line"></span></a>
-        <a href="#footer" class="down"><span></span><span></span></a>
+      <div class="scrollIcon" @click="scrollToElement({ behavior: 'smooth' })">
+        <a href="javascript:;" class="up"><span></span><span></span></a>
+        <a href="javascript:;"><span class="line"></span></a>
+        <a href="javascript:;" class="down"><span></span><span></span></a>
       </div>
     </div>
-    <div class="section02 sect">
+    <div class="section02 sect" id="toEls">
       <PersonalInfo />
     </div>
     <div class="section03 sect">
@@ -85,6 +85,10 @@ export default {
     },
     scrollListener(e) {
       this.visible = window.scrollY > 1000;
+    },
+    scrollToElement() {
+      let element = document.getElementById("toEls");
+      element.scrollIntoView({ behavior: "smooth", block: "end" });
     },
   },
   mounted() {

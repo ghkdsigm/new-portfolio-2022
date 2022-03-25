@@ -171,7 +171,7 @@
         }
       }
       .career {
-        padding: 15px 0 35px;
+        padding: 15px 0 15px;
         h5 {
           font-size: 25px;
           color: #2262ad;
