@@ -123,8 +123,8 @@ export default {
         const linkSel1 = document.querySelector(".router-link-active");
         const linkSel2 = document.querySelector(".router-link-exact-active");
         if (this.index == 4 || this.index == 5) {
-          linkSel1.style.color = "#fff";
-          linkSel2.style.color = "#fff";
+          linkSel1.style.color = "#ccc";
+          linkSel2.style.color = "#ccc";
         } else {
           linkSel1.style.color = "#000";
           linkSel2.style.color = "#000";
