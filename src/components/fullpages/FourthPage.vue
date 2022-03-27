@@ -8,7 +8,7 @@
     >
       <swiper-slide
         class="swiper-img"
-        v-for="(portfolio, index) in portfolios"
+        v-for="(portfolio, index) in this.$store.state.frontworks"
         :key="index"
       >
         <div class="img_box">
@@ -114,74 +114,74 @@ export default {
         },
       },
 
-      portfolios: [
-        {
-          title: "대한탁구협회 홈페이지 유지보수1",
-          image: require("@/assets/images/works/img01_1.png"),
-          innerImage: require("@/assets/images/webs/e01.gif"),
-          sub: `서브제목`,
-          url: "http://www.koreatta.or.kr/servlets/org/Main",
-          tag: "#publising #design",
-          party: `100%`,
-          content: `Spring boot + Vue.js(CLI) + Mybatis + MySql(AWS EC2)) + AWS S3(이미지및 파일서버)를 활용한
-          부동산 중개 플랫폼 구해방`,
-        },
-        {
-          title: "대한탁구협회 홈페이지 유지보수2",
-          image: require("@/assets/images/works/img01_1.png"),
-          innerImage: require("@/assets/images/webs/e01.gif"),
-          sub: `서브제목`,
-          url: "https://github.com/loy124/ProjectRoom",
-          tag: "#publising #design",
-          party: `100%`,
-          content: `Spring boot + Vue.js(CLI) + Mybatis + MySql(AWS EC2)) + AWS S3(이미지및 파일서버)를 활용한
-          부동산 중개 플랫폼 구해방`,
-        },
-        {
-          title: "대한탁구협회 홈페이지 유지보수3",
-          image: require("@/assets/images/works/img01_1.png"),
-          innerImage: require("@/assets/images/webs/e01.gif"),
-          sub: `서브제목`,
-          url: "https://github.com/loy124/ProjectRoom",
-          tag: "#publising #design",
-          party: `100%`,
-          content: `Spring boot + Vue.js(CLI) + Mybatis + MySql(AWS EC2)) + AWS S3(이미지및 파일서버)를 활용한
-          부동산 중개 플랫폼 구해방`,
-        },
-        {
-          title: "대한탁구협회 홈페이지 유지보수3",
-          image: require("@/assets/images/works/img01_1.png"),
-          innerImage: require("@/assets/images/webs/e01.gif"),
-          sub: `서브제목`,
-          url: "https://github.com/loy124/ProjectRoom",
-          tag: "#publising #design",
-          party: `100%`,
-          content: `Spring boot + Vue.js(CLI) + Mybatis + MySql(AWS EC2)) + AWS S3(이미지및 파일서버)를 활용한
-          부동산 중개 플랫폼 구해방`,
-        },
-        {
-          title: "대한탁구협회 홈페이지 유지보수3",
-          image: require("@/assets/images/works/img01_1.png"),
-          innerImage: require("@/assets/images/webs/e01.gif"),
-          sub: `서브제목`,
-          url: "https://github.com/loy124/ProjectRoom",
-          tag: "#publising #design",
-          party: `100%`,
-          content: `Spring boot + Vue.js(CLI) + Mybatis + MySql(AWS EC2)) + AWS S3(이미지및 파일서버)를 활용한
-          부동산 중개 플랫폼 구해방`,
-        },
-        {
-          title: "대한탁구협회 홈페이지 유지보수13",
-          image: require("@/assets/images/works/img01_1.png"),
-          innerImage: require("@/assets/images/webs/e01.gif"),
-          sub: `서브제목`,
-          url: "https://amazing-jepsen-0b0d0e.netlify.app/",
-          tag: "#publising #design",
-          party: `100%`,
-          content: `Spring boot + Vue.js(CLI) + Mybatis + MySql(AWS EC2)) + AWS S3(이미지및 파일서버)를 활용한
-          부동산 중개 플랫폼 구해방`,
-        },
-      ],
+      // portfolios: [
+      //   {
+      //     title: "대한탁구협회 홈페이지 유지보수1",
+      //     image: require("@/assets/images/works/img01_1.png"),
+      //     innerImage: require("@/assets/images/webs/e01.gif"),
+      //     sub: `서브제목`,
+      //     url: "http://www.koreatta.or.kr/servlets/org/Main",
+      //     tag: "#publising #design",
+      //     party: `100%`,
+      //     content: `Spring boot + Vue.js(CLI) + Mybatis + MySql(AWS EC2)) + AWS S3(이미지및 파일서버)를 활용한
+      //     부동산 중개 플랫폼 구해방`,
+      //   },
+      //   {
+      //     title: "대한탁구협회 홈페이지 유지보수2",
+      //     image: require("@/assets/images/works/img01_1.png"),
+      //     innerImage: require("@/assets/images/webs/e01.gif"),
+      //     sub: `서브제목`,
+      //     url: "https://github.com/loy124/ProjectRoom",
+      //     tag: "#publising #design",
+      //     party: `100%`,
+      //     content: `Spring boot + Vue.js(CLI) + Mybatis + MySql(AWS EC2)) + AWS S3(이미지및 파일서버)를 활용한
+      //     부동산 중개 플랫폼 구해방`,
+      //   },
+      //   {
+      //     title: "대한탁구협회 홈페이지 유지보수3",
+      //     image: require("@/assets/images/works/img01_1.png"),
+      //     innerImage: require("@/assets/images/webs/e01.gif"),
+      //     sub: `서브제목`,
+      //     url: "https://github.com/loy124/ProjectRoom",
+      //     tag: "#publising #design",
+      //     party: `100%`,
+      //     content: `Spring boot + Vue.js(CLI) + Mybatis + MySql(AWS EC2)) + AWS S3(이미지및 파일서버)를 활용한
+      //     부동산 중개 플랫폼 구해방`,
+      //   },
+      //   {
+      //     title: "대한탁구협회 홈페이지 유지보수3",
+      //     image: require("@/assets/images/works/img01_1.png"),
+      //     innerImage: require("@/assets/images/webs/e01.gif"),
+      //     sub: `서브제목`,
+      //     url: "https://github.com/loy124/ProjectRoom",
+      //     tag: "#publising #design",
+      //     party: `100%`,
+      //     content: `Spring boot + Vue.js(CLI) + Mybatis + MySql(AWS EC2)) + AWS S3(이미지및 파일서버)를 활용한
+      //     부동산 중개 플랫폼 구해방`,
+      //   },
+      //   {
+      //     title: "대한탁구협회 홈페이지 유지보수3",
+      //     image: require("@/assets/images/works/img01_1.png"),
+      //     innerImage: require("@/assets/images/webs/e01.gif"),
+      //     sub: `서브제목`,
+      //     url: "https://github.com/loy124/ProjectRoom",
+      //     tag: "#publising #design",
+      //     party: `100%`,
+      //     content: `Spring boot + Vue.js(CLI) + Mybatis + MySql(AWS EC2)) + AWS S3(이미지및 파일서버)를 활용한
+      //     부동산 중개 플랫폼 구해방`,
+      //   },
+      //   {
+      //     title: "대한탁구협회 홈페이지 유지보수13",
+      //     image: require("@/assets/images/works/img01_1.png"),
+      //     innerImage: require("@/assets/images/webs/e01.gif"),
+      //     sub: `서브제목`,
+      //     url: "https://amazing-jepsen-0b0d0e.netlify.app/",
+      //     tag: "#publising #design",
+      //     party: `100%`,
+      //     content: `Spring boot + Vue.js(CLI) + Mybatis + MySql(AWS EC2)) + AWS S3(이미지및 파일서버)를 활용한
+      //     부동산 중개 플랫폼 구해방`,
+      //   },
+      // ],
       modalData: "",
       modalShow: false,
     };
@@ -189,13 +189,16 @@ export default {
   methods: {
     clickModal(title) {
       this.modalShow = true;
-      this.modalData = this.portfolios.filter(
+      this.modalData = this.$store.state.frontworks.filter(
         portfolio => portfolio.title === title,
       )[0];
     },
     closeModal() {
       this.modalShow = false;
     },
+  },
+  created() {
+    return this.$store.dispatch("FECTH_MYFRONT");
   },
   computed: {
     swiper() {

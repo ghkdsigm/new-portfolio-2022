@@ -1,16 +1,24 @@
 import Vue from "vue";
 import Vuex from "vuex";
-import { MyInfoList } from "../api/index.js";
+import { MyInfoList, MyOperationList, MyFront } from "../api/index.js";
 
 Vue.use(Vuex);
 
 export const store = new Vuex.Store({
   state: {
     datas: [],
+    opeartiondata: [],
+    frontworks: [],
   },
   mutations: {
     SET_INFO(state, payload) {
       state.datas = payload;
+    },
+    SET_OPERATION(state, payload) {
+      state.opeartiondata = payload;
+    },
+    SET_MYFRONT(state, payload) {
+      state.frontworks = payload;
     },
   },
   actions: {
@@ -22,6 +30,26 @@ export const store = new Vuex.Store({
         })
         .catch(error => {
           console.log(error);
+        });
+    },
+    FETCH_OPERATION(context) {
+      MyOperationList()
+        .then(res => {
+          context.commit("SET_OPERATION", res.data);
+          console.log(res.data);
+        })
+        .catch(error => {
+          console.log(error);
+        });
+    },
+    FECTH_MYFRONT(context) {
+      MyFront()
+        .then(res => {
+          context.commit("SET_MYFRONT", res.data);
+          console.log(res);
+        })
+        .catch(err => {
+          console.log(err);
         });
     },
   },

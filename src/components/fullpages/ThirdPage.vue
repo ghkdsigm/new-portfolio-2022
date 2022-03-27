@@ -8,7 +8,7 @@
     >
       <swiper-slide
         class="swiper-img"
-        v-for="(portfolio, index) in portfolios"
+        v-for="(portfolio, index) in this.$store.state.opeartiondata"
         :key="index"
       >
         <div class="img_box">
@@ -114,97 +114,97 @@ export default {
         },
       },
 
-      portfolios: [
-        {
-          title: "대한탁구협회 홈페이지 유지보수",
-          image: require("@/assets/images/works/img001_1.png"),
-          innerImage: require("@/assets/images/webs/e01.gif"),
-          sub: `서브제목`,
-          url: "http://www.koreatta.or.kr/servlets/org/Main",
-          tag: "#publising #design",
-          party: `100%`,
-          content: `Spring boot + Vue.js(CLI) + Mybatis + MySql(AWS EC2)) + AWS S3(이미지및 파일서버)를 활용한
-          부동산 중개 플랫폼 구해방`,
-        },
-        {
-          title: "대한복싱협회&시도협회 홈페이지 유지보수",
-          image: require("@/assets/images/works/img002_1.png"),
-          innerImage: require("@/assets/images/webs/e01.gif"),
-          sub: `서브제목`,
-          url: "https://github.com/loy124/ProjectRoom",
-          tag: "#publising #design",
-          party: `100%`,
-          content: `Spring boot + Vue.js(CLI) + Mybatis + MySql(AWS EC2)) + AWS S3(이미지및 파일서버)를 활용한
-          부동산 중개 플랫폼 구해방`,
-        },
-        {
-          title: "경남체육회 홈페이지 유지보수",
-          image: require("@/assets/images/works/img003_1.png"),
-          innerImage: require("@/assets/images/webs/e01.gif"),
-          sub: `서브제목`,
-          url: "https://github.com/loy124/ProjectRoom",
-          tag: "#publising #design",
-          party: `100%`,
-          content: `Spring boot + Vue.js(CLI) + Mybatis + MySql(AWS EC2)) + AWS S3(이미지및 파일서버)를 활용한
-          부동산 중개 플랫폼 구해방`,
-        },
-        {
-          title:
-            "한국도핑방지위원회 검사관 관리시스템(ADTIS) 및 홈페이지 유지보수",
-          image: require("@/assets/images/works/img004_1.png"),
-          innerImage: require("@/assets/images/webs/e01.gif"),
-          sub: `서브제목`,
-          url: "https://github.com/loy124/ProjectRoom",
-          tag: "#publising #design",
-          party: `100%`,
-          content: `Spring boot + Vue.js(CLI) + Mybatis + MySql(AWS EC2)) + AWS S3(이미지및 파일서버)를 활용한
-          부동산 중개 플랫폼 구해방`,
-        },
-        {
-          title: "창원시체육회 홈페이지 유지보수",
-          image: require("@/assets/images/works/img005_1.png"),
-          innerImage: require("@/assets/images/webs/e01.gif"),
-          sub: `서브제목`,
-          url: "https://github.com/loy124/ProjectRoom",
-          tag: "#publising #design",
-          party: `100%`,
-          content: `Spring boot + Vue.js(CLI) + Mybatis + MySql(AWS EC2)) + AWS S3(이미지및 파일서버)를 활용한
-          부동산 중개 플랫폼 구해방`,
-        },
-        {
-          title: "대한펜싱협회 대회운영시스템 & 홈페이지 유지보수",
-          image: require("@/assets/images/works/img006_1.png"),
-          innerImage: require("@/assets/images/webs/e01.gif"),
-          sub: `서브제목`,
-          url: "https://github.com/loy124/ProjectRoom",
-          tag: "#publising #design",
-          party: `100%`,
-          content: `Spring boot + Vue.js(CLI) + Mybatis + MySql(AWS EC2)) + AWS S3(이미지및 파일서버)를 활용한
-          부동산 중개 플랫폼 구해방`,
-        },
-        {
-          title: "대한승마협회 홈페이지 유지보수",
-          image: require("@/assets/images/works/img007_1.png"),
-          innerImage: require("@/assets/images/webs/e01.gif"),
-          sub: `서브제목`,
-          url: "https://github.com/loy124/ProjectRoom",
-          tag: "#publising #design",
-          party: `100%`,
-          content: `Spring boot + Vue.js(CLI) + Mybatis + MySql(AWS EC2)) + AWS S3(이미지및 파일서버)를 활용한
-          부동산 중개 플랫폼 구해방`,
-        },
-        {
-          title: "경찰청 홍보관리시스템(PIMS) 시스템 유지보수",
-          image: require("@/assets/images/works/img01_1.png"),
-          innerImage: require("@/assets/images/webs/e01.gif"),
-          sub: `서브제목`,
-          url: "https://github.com/loy124/ProjectRoom",
-          tag: "#publising #design",
-          party: `100%`,
-          content: `Spring boot + Vue.js(CLI) + Mybatis + MySql(AWS EC2)) + AWS S3(이미지및 파일서버)를 활용한
-          부동산 중개 플랫폼 구해방`,
-        },
-      ],
+      // portfolios: [
+      //   {
+      //     title: "대한탁구협회 홈페이지 유지보수",
+      //     image: require("@/assets/images/works/img001_1.png"),
+      //     innerImage: require("@/assets/images/webs/e01.gif"),
+      //     sub: `서브제목`,
+      //     url: "http://www.koreatta.or.kr/servlets/org/Main",
+      //     tag: "#publising #design",
+      //     party: `100%`,
+      //     content: `Spring boot + Vue.js(CLI) + Mybatis + MySql(AWS EC2)) + AWS S3(이미지및 파일서버)를 활용한
+      //     부동산 중개 플랫폼 구해방`,
+      //   },
+      //   {
+      //     title: "대한복싱협회&시도협회 홈페이지 유지보수",
+      //     image: require("@/assets/images/works/img002_1.png"),
+      //     innerImage: require("@/assets/images/webs/e01.gif"),
+      //     sub: `서브제목`,
+      //     url: "https://github.com/loy124/ProjectRoom",
+      //     tag: "#publising #design",
+      //     party: `100%`,
+      //     content: `Spring boot + Vue.js(CLI) + Mybatis + MySql(AWS EC2)) + AWS S3(이미지및 파일서버)를 활용한
+      //     부동산 중개 플랫폼 구해방`,
+      //   },
+      //   {
+      //     title: "경남체육회 홈페이지 유지보수",
+      //     image: require("@/assets/images/works/img003_1.png"),
+      //     innerImage: require("@/assets/images/webs/e01.gif"),
+      //     sub: `서브제목`,
+      //     url: "https://github.com/loy124/ProjectRoom",
+      //     tag: "#publising #design",
+      //     party: `100%`,
+      //     content: `Spring boot + Vue.js(CLI) + Mybatis + MySql(AWS EC2)) + AWS S3(이미지및 파일서버)를 활용한
+      //     부동산 중개 플랫폼 구해방`,
+      //   },
+      //   {
+      //     title:
+      //       "한국도핑방지위원회 검사관 관리시스템(ADTIS) 및 홈페이지 유지보수",
+      //     image: require("@/assets/images/works/img004_1.png"),
+      //     innerImage: require("@/assets/images/webs/e01.gif"),
+      //     sub: `서브제목`,
+      //     url: "https://github.com/loy124/ProjectRoom",
+      //     tag: "#publising #design",
+      //     party: `100%`,
+      //     content: `Spring boot + Vue.js(CLI) + Mybatis + MySql(AWS EC2)) + AWS S3(이미지및 파일서버)를 활용한
+      //     부동산 중개 플랫폼 구해방`,
+      //   },
+      //   {
+      //     title: "창원시체육회 홈페이지 유지보수",
+      //     image: require("@/assets/images/works/img005_1.png"),
+      //     innerImage: require("@/assets/images/webs/e01.gif"),
+      //     sub: `서브제목`,
+      //     url: "https://github.com/loy124/ProjectRoom",
+      //     tag: "#publising #design",
+      //     party: `100%`,
+      //     content: `Spring boot + Vue.js(CLI) + Mybatis + MySql(AWS EC2)) + AWS S3(이미지및 파일서버)를 활용한
+      //     부동산 중개 플랫폼 구해방`,
+      //   },
+      //   {
+      //     title: "대한펜싱협회 대회운영시스템 & 홈페이지 유지보수",
+      //     image: require("@/assets/images/works/img006_1.png"),
+      //     innerImage: require("@/assets/images/webs/e01.gif"),
+      //     sub: `서브제목`,
+      //     url: "https://github.com/loy124/ProjectRoom",
+      //     tag: "#publising #design",
+      //     party: `100%`,
+      //     content: `Spring boot + Vue.js(CLI) + Mybatis + MySql(AWS EC2)) + AWS S3(이미지및 파일서버)를 활용한
+      //     부동산 중개 플랫폼 구해방`,
+      //   },
+      //   {
+      //     title: "대한승마협회 홈페이지 유지보수",
+      //     image: require("@/assets/images/works/img007_1.png"),
+      //     innerImage: require("@/assets/images/webs/e01.gif"),
+      //     sub: `서브제목`,
+      //     url: "https://github.com/loy124/ProjectRoom",
+      //     tag: "#publising #design",
+      //     party: `100%`,
+      //     content: `Spring boot + Vue.js(CLI) + Mybatis + MySql(AWS EC2)) + AWS S3(이미지및 파일서버)를 활용한
+      //     부동산 중개 플랫폼 구해방`,
+      //   },
+      //   {
+      //     title: "경찰청 홍보관리시스템(PIMS) 시스템 유지보수",
+      //     image: require("@/assets/images/works/img01_1.png"),
+      //     innerImage: require("@/assets/images/webs/e01.gif"),
+      //     sub: `서브제목`,
+      //     url: "https://github.com/loy124/ProjectRoom",
+      //     tag: "#publising #design",
+      //     party: `100%`,
+      //     content: `Spring boot + Vue.js(CLI) + Mybatis + MySql(AWS EC2)) + AWS S3(이미지및 파일서버)를 활용한
+      //     부동산 중개 플랫폼 구해방`,
+      //   },
+      // ],
       modalData: "",
       modalShow: false,
     };
@@ -212,13 +212,16 @@ export default {
   methods: {
     clickModal(title) {
       this.modalShow = true;
-      this.modalData = this.portfolios.filter(
+      this.modalData = this.$store.state.opeartiondata.filter(
         portfolio => portfolio.title === title,
       )[0];
     },
     closeModal() {
       this.modalShow = false;
     },
+  },
+  created() {
+    return this.$store.dispatch("FETCH_OPERATION");
   },
   computed: {
     swiper() {
