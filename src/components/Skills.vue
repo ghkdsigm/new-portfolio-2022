@@ -96,7 +96,7 @@
       justify-content: center;
       li {
         margin: 0 15px 15px;
-        width: 80px;
+        width: 90px;
         overflow: hidden;
         display: inline-block;
         box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.267);
