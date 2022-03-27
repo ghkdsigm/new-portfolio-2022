@@ -8,7 +8,7 @@
     >
       <swiper-slide
         class="swiper-img"
-        v-for="(portfolio, index) in portfolios"
+        v-for="(portfolio, index) in this.$store.state.datas"
         :key="index"
       >
         <div class="img_box">
@@ -115,164 +115,164 @@ export default {
         },
       },
 
-      portfolios: [
-        {
-          title: "한국프로스포츠협회 정보광장포털 개선사업",
-          image: require("@/assets/images/works/img04_1.png"),
-          innerImage: require("@/assets/images/webs/e00.gif"),
-          sub: `서브제목`,
-          url: "http://www.koreatta.or.kr/servlets/org/Main",
-          tag: "#publising #design",
-          party: `100%`,
-          content: `Spring boot + Vue.js(CLI) + Mybatis + MySql(AWS EC2)) + AWS S3(이미지및 파일서버)를 활용한
-          부동산 중개 플랫폼 구해방`,
-        },
-        {
-          title: "한국도핑방지위원회 검사관교육시스템 구축",
-          image: require("@/assets/images/works/img08_1.png"),
-          innerImage: require("@/assets/images/webs/e02.gif"),
-          sub: `서브제목`,
-          url: "https://github.com/loy124/ProjectRoom",
-          tag: "#publising #design",
-          party: `100%`,
-          content: `Spring boot + Vue.js(CLI) + Mybatis + MySql(AWS EC2)) + AWS S3(이미지및 파일서버)를 활용한
-          부동산 중개 플랫폼 구해방`,
-        },
-        {
-          title: "한국프로스포츠협회 홈페이지 구축",
-          image: require("@/assets/images/works/img02_1.png"),
-          innerImage: require("@/assets/images/webs/e03.gif"),
-          sub: `서브제목`,
-          url: "https://github.com/loy124/ProjectRoom",
-          tag: "#publising #design",
-          party: `100%`,
-          content: `Spring boot + Vue.js(CLI) + Mybatis + MySql(AWS EC2)) + AWS S3(이미지및 파일서버)를 활용한
-          부동산 중개 플랫폼 구해방`,
-        },
-        {
-          title:
-            "대한체육회 스포츠영웅 국민지지도 조사 사이트 구축 (2016~2021)",
-          image: require("@/assets/images/works/img01_1.png"),
-          innerImage: require("@/assets/images/webs/e04.gif"),
-          sub: `서브제목`,
-          url: "https://github.com/loy124/ProjectRoom",
-          tag: "#publising #design",
-          party: `100%`,
-          content: `Spring boot + Vue.js(CLI) + Mybatis + MySql(AWS EC2)) + AWS S3(이미지및 파일서버)를 활용한
-          부동산 중개 플랫폼 구해방`,
-        },
-        {
-          title: "한국프로축구연맹(KLEAGUE) 심판관리시스템(KRMS) 구축",
-          image: require("@/assets/images/works/img09_1.png"),
-          innerImage: require("@/assets/images/webs/e04.gif"),
-          sub: `서브제목`,
-          url: "https://github.com/loy124/ProjectRoom",
-          tag: "#publising #design",
-          party: `100%`,
-          content: `Spring boot + Vue.js(CLI) + Mybatis + MySql(AWS EC2)) + AWS S3(이미지및 파일서버)를 활용한
-          부동산 중개 플랫폼 구해방`,
-        },
-        {
-          title: "대한체육회 100주년 기념홈페이지 구축",
-          image: require("@/assets/images/works/img05_1.png"),
-          innerImage: require("@/assets/images/webs/e07.gif"),
-          sub: `서브제목`,
-          url: "https://github.com/loy124/ProjectRoom",
-          tag: "#publising #design",
-          party: `100%`,
-          content: `Spring boot + Vue.js(CLI) + Mybatis + MySql(AWS EC2)) + AWS S3(이미지및 파일서버)를 활용한
-          부동산 중개 플랫폼 구해방`,
-        },
-        {
-          title:
-            "제주유나이티드 스마트-스타디움 내손안의전광판 모바일웹앱 구축",
-          image: require("@/assets/images/works/img10_1.png"),
-          innerImage: require("@/assets/images/webs/e07.gif"),
-          sub: `서브제목`,
-          url: "https://github.com/loy124/ProjectRoom",
-          tag: "#publising #design",
-          party: `100%`,
-          content: `Spring boot + Vue.js(CLI) + Mybatis + MySql(AWS EC2)) + AWS S3(이미지및 파일서버)를 활용한
-          부동산 중개 플랫폼 구해방`,
-        },
-        {
-          title: "경찰청 홈페이지 고도화 사업",
-          image: require("@/assets/images/works/img06_1.png"),
-          innerImage: require("@/assets/images/webs/e07.gif"),
-          sub: `서브제목`,
-          url: "https://github.com/loy124/ProjectRoom",
-          tag: "#publising #design",
-          party: `100%`,
-          content: `Spring boot + Vue.js(CLI) + Mybatis + MySql(AWS EC2)) + AWS S3(이미지및 파일서버)를 활용한
-          부동산 중개 플랫폼 구해방`,
-        },
-        {
-          title: "경남체육회 온오프라인 스포츠한마당 앱제작",
-          image: require("@/assets/images/works/img07_1.png"),
-          innerImage: require("@/assets/images/webs/e07.gif"),
-          sub: `서브제목`,
-          url: "https://github.com/loy124/ProjectRoom",
-          tag: "#publising #design",
-          party: `100%`,
-          content: `Spring boot + Vue.js(CLI) + Mybatis + MySql(AWS EC2)) + AWS S3(이미지및 파일서버)를 활용한
-          부동산 중개 플랫폼 구해방`,
-        },
-        {
-          title: "K리그 아카이브 시스템 구축",
-          image: require("@/assets/images/works/img12_1.png"),
-          innerImage: require("@/assets/images/webs/e07.gif"),
-          sub: `서브제목`,
-          url: "https://github.com/loy124/ProjectRoom",
-          tag: "#publising #design",
-          party: `100%`,
-          content: `Spring boot + Vue.js(CLI) + Mybatis + MySql(AWS EC2)) + AWS S3(이미지및 파일서버)를 활용한
-          부동산 중개 플랫폼 구해방`,
-        },
-        {
-          title: "국가대표선수촌 방문예약시스템 구축",
-          image: require("@/assets/images/works/img11_1.png"),
-          innerImage: require("@/assets/images/webs/e07.gif"),
-          sub: `서브제목`,
-          url: "https://github.com/loy124/ProjectRoom",
-          tag: "#publising #design",
-          party: `100%`,
-          content: `Spring boot + Vue.js(CLI) + Mybatis + MySql(AWS EC2)) + AWS S3(이미지및 파일서버)를 활용한
-          부동산 중개 플랫폼 구해방`,
-        },
-        {
-          title: "대한체육회 대회경기영상 사이트 고도화",
-          image: require("@/assets/images/works/img14_1.png"),
-          innerImage: require("@/assets/images/webs/e07.gif"),
-          sub: `서브제목`,
-          url: "https://github.com/loy124/ProjectRoom",
-          tag: "#publising #design",
-          party: `100%`,
-          content: `Spring boot + Vue.js(CLI) + Mybatis + MySql(AWS EC2)) + AWS S3(이미지및 파일서버)를 활용한
-          부동산 중개 플랫폼 구해방`,
-        },
-        {
-          title: "대한체육회 한국체육을 빛낸 100인 후보자 추천 접수 제작",
-          image: require("@/assets/images/works/img15_1.png"),
-          innerImage: require("@/assets/images/webs/e07.gif"),
-          sub: `서브제목`,
-          url: "https://github.com/loy124/ProjectRoom",
-          tag: "#publising #design",
-          party: `100%`,
-          content: `Spring boot + Vue.js(CLI) + Mybatis + MySql(AWS EC2)) + AWS S3(이미지및 파일서버)를 활용한
-          부동산 중개 플랫폼 구해방`,
-        },
-        {
-          title: "한국 프로스포츠협회 온라인 암표신고 사이트 구축",
-          image: require("@/assets/images/works/img13_1.png"),
-          innerImage: require("@/assets/images/webs/e07.gif"),
-          sub: `서브제목`,
-          url: "https://github.com/loy124/ProjectRoom",
-          tag: "#publising #design",
-          party: `100%`,
-          content: `Spring boot + Vue.js(CLI) + Mybatis + MySql(AWS EC2)) + AWS S3(이미지및 파일서버)를 활용한
-          부동산 중개 플랫폼 구해방`,
-        },
-      ],
+      // portfolios: [
+      //   {
+      //     title: "한국프로스포츠협회 정보광장포털 개선사업",
+      //     image: require("@/assets/images/works/img04_1.png"),
+      //     innerImage: require("@/assets/images/webs/e00.gif"),
+      //     sub: `서브제목`,
+      //     url: "http://www.koreatta.or.kr/servlets/org/Main",
+      //     tag: "#publising #design",
+      //     party: `100%`,
+      //     content: `Spring boot + Vue.js(CLI) + Mybatis + MySql(AWS EC2)) + AWS S3(이미지및 파일서버)를 활용한
+      //     부동산 중개 플랫폼 구해방`,
+      //   },
+      //   {
+      //     title: "한국도핑방지위원회 검사관교육시스템 구축",
+      //     image: require("@/assets/images/works/img08_1.png"),
+      //     innerImage: require("@/assets/images/webs/e02.gif"),
+      //     sub: `서브제목`,
+      //     url: "https://github.com/loy124/ProjectRoom",
+      //     tag: "#publising #design",
+      //     party: `100%`,
+      //     content: `Spring boot + Vue.js(CLI) + Mybatis + MySql(AWS EC2)) + AWS S3(이미지및 파일서버)를 활용한
+      //     부동산 중개 플랫폼 구해방`,
+      //   },
+      //   {
+      //     title: "한국프로스포츠협회 홈페이지 구축",
+      //     image: require("@/assets/images/works/img02_1.png"),
+      //     innerImage: require("@/assets/images/webs/e03.gif"),
+      //     sub: `서브제목`,
+      //     url: "https://github.com/loy124/ProjectRoom",
+      //     tag: "#publising #design",
+      //     party: `100%`,
+      //     content: `Spring boot + Vue.js(CLI) + Mybatis + MySql(AWS EC2)) + AWS S3(이미지및 파일서버)를 활용한
+      //     부동산 중개 플랫폼 구해방`,
+      //   },
+      //   {
+      //     title:
+      //       "대한체육회 스포츠영웅 국민지지도 조사 사이트 구축 (2016~2021)",
+      //     image: require("@/assets/images/works/img01_1.png"),
+      //     innerImage: require("@/assets/images/webs/e04.gif"),
+      //     sub: `서브제목`,
+      //     url: "https://github.com/loy124/ProjectRoom",
+      //     tag: "#publising #design",
+      //     party: `100%`,
+      //     content: `Spring boot + Vue.js(CLI) + Mybatis + MySql(AWS EC2)) + AWS S3(이미지및 파일서버)를 활용한
+      //     부동산 중개 플랫폼 구해방`,
+      //   },
+      //   {
+      //     title: "한국프로축구연맹(KLEAGUE) 심판관리시스템(KRMS) 구축",
+      //     image: require("@/assets/images/works/img09_1.png"),
+      //     innerImage: require("@/assets/images/webs/e04.gif"),
+      //     sub: `서브제목`,
+      //     url: "https://github.com/loy124/ProjectRoom",
+      //     tag: "#publising #design",
+      //     party: `100%`,
+      //     content: `Spring boot + Vue.js(CLI) + Mybatis + MySql(AWS EC2)) + AWS S3(이미지및 파일서버)를 활용한
+      //     부동산 중개 플랫폼 구해방`,
+      //   },
+      //   {
+      //     title: "대한체육회 100주년 기념홈페이지 구축",
+      //     image: require("@/assets/images/works/img05_1.png"),
+      //     innerImage: require("@/assets/images/webs/e07.gif"),
+      //     sub: `서브제목`,
+      //     url: "https://github.com/loy124/ProjectRoom",
+      //     tag: "#publising #design",
+      //     party: `100%`,
+      //     content: `Spring boot + Vue.js(CLI) + Mybatis + MySql(AWS EC2)) + AWS S3(이미지및 파일서버)를 활용한
+      //     부동산 중개 플랫폼 구해방`,
+      //   },
+      //   {
+      //     title:
+      //       "제주유나이티드 스마트-스타디움 내손안의전광판 모바일웹앱 구축",
+      //     image: require("@/assets/images/works/img10_1.png"),
+      //     innerImage: require("@/assets/images/webs/e07.gif"),
+      //     sub: `서브제목`,
+      //     url: "https://github.com/loy124/ProjectRoom",
+      //     tag: "#publising #design",
+      //     party: `100%`,
+      //     content: `Spring boot + Vue.js(CLI) + Mybatis + MySql(AWS EC2)) + AWS S3(이미지및 파일서버)를 활용한
+      //     부동산 중개 플랫폼 구해방`,
+      //   },
+      //   {
+      //     title: "경찰청 홈페이지 고도화 사업",
+      //     image: require("@/assets/images/works/img06_1.png"),
+      //     innerImage: require("@/assets/images/webs/e07.gif"),
+      //     sub: `서브제목`,
+      //     url: "https://github.com/loy124/ProjectRoom",
+      //     tag: "#publising #design",
+      //     party: `100%`,
+      //     content: `Spring boot + Vue.js(CLI) + Mybatis + MySql(AWS EC2)) + AWS S3(이미지및 파일서버)를 활용한
+      //     부동산 중개 플랫폼 구해방`,
+      //   },
+      //   {
+      //     title: "경남체육회 온오프라인 스포츠한마당 앱제작",
+      //     image: require("@/assets/images/works/img07_1.png"),
+      //     innerImage: require("@/assets/images/webs/e07.gif"),
+      //     sub: `서브제목`,
+      //     url: "https://github.com/loy124/ProjectRoom",
+      //     tag: "#publising #design",
+      //     party: `100%`,
+      //     content: `Spring boot + Vue.js(CLI) + Mybatis + MySql(AWS EC2)) + AWS S3(이미지및 파일서버)를 활용한
+      //     부동산 중개 플랫폼 구해방`,
+      //   },
+      //   {
+      //     title: "K리그 아카이브 시스템 구축",
+      //     image: require("@/assets/images/works/img12_1.png"),
+      //     innerImage: require("@/assets/images/webs/e07.gif"),
+      //     sub: `서브제목`,
+      //     url: "https://github.com/loy124/ProjectRoom",
+      //     tag: "#publising #design",
+      //     party: `100%`,
+      //     content: `Spring boot + Vue.js(CLI) + Mybatis + MySql(AWS EC2)) + AWS S3(이미지및 파일서버)를 활용한
+      //     부동산 중개 플랫폼 구해방`,
+      //   },
+      //   {
+      //     title: "국가대표선수촌 방문예약시스템 구축",
+      //     image: require("@/assets/images/works/img11_1.png"),
+      //     innerImage: require("@/assets/images/webs/e07.gif"),
+      //     sub: `서브제목`,
+      //     url: "https://github.com/loy124/ProjectRoom",
+      //     tag: "#publising #design",
+      //     party: `100%`,
+      //     content: `Spring boot + Vue.js(CLI) + Mybatis + MySql(AWS EC2)) + AWS S3(이미지및 파일서버)를 활용한
+      //     부동산 중개 플랫폼 구해방`,
+      //   },
+      //   {
+      //     title: "대한체육회 대회경기영상 사이트 고도화",
+      //     image: require("@/assets/images/works/img14_1.png"),
+      //     innerImage: require("@/assets/images/webs/e07.gif"),
+      //     sub: `서브제목`,
+      //     url: "https://github.com/loy124/ProjectRoom",
+      //     tag: "#publising #design",
+      //     party: `100%`,
+      //     content: `Spring boot + Vue.js(CLI) + Mybatis + MySql(AWS EC2)) + AWS S3(이미지및 파일서버)를 활용한
+      //     부동산 중개 플랫폼 구해방`,
+      //   },
+      //   {
+      //     title: "대한체육회 한국체육을 빛낸 100인 후보자 추천 접수 제작",
+      //     image: require("@/assets/images/works/img15_1.png"),
+      //     innerImage: require("@/assets/images/webs/e07.gif"),
+      //     sub: `서브제목`,
+      //     url: "https://github.com/loy124/ProjectRoom",
+      //     tag: "#publising #design",
+      //     party: `100%`,
+      //     content: `Spring boot + Vue.js(CLI) + Mybatis + MySql(AWS EC2)) + AWS S3(이미지및 파일서버)를 활용한
+      //     부동산 중개 플랫폼 구해방`,
+      //   },
+      //   {
+      //     title: "한국 프로스포츠협회 온라인 암표신고 사이트 구축",
+      //     image: require("@/assets/images/works/img13_1.png"),
+      //     innerImage: require("@/assets/images/webs/e07.gif"),
+      //     sub: `서브제목`,
+      //     url: "https://github.com/loy124/ProjectRoom",
+      //     tag: "#publising #design",
+      //     party: `100%`,
+      //     content: `Spring boot + Vue.js(CLI) + Mybatis + MySql(AWS EC2)) + AWS S3(이미지및 파일서버)를 활용한
+      //     부동산 중개 플랫폼 구해방`,
+      //   },
+      // ],
       modalData: "",
       modalShow: false,
     };
@@ -280,13 +280,16 @@ export default {
   methods: {
     clickModal(title) {
       this.modalShow = true;
-      this.modalData = this.portfolios.filter(
+      this.modalData = this.$store.state.datas.filter(
         portfolio => portfolio.title === title,
       )[0];
     },
     closeModal() {
       this.modalShow = false;
     },
+  },
+  created() {
+    return this.$store.dispatch("FETCH_INFO");
   },
   computed: {
     swiper() {

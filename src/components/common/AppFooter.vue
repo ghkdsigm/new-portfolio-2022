@@ -1,7 +1,11 @@
 <template>
   <div class="footer">
     <div class="footer_wrap" style="opacity: 1">
-      <a href="https://github.com/ghkdsigm" class="gitLink" target="_target">
+      <a
+        href="https://github.com/ghkdsigm/new-portfolio-2022"
+        class="gitLink"
+        target="_target"
+      >
         <span
           ><svg
             class="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge"
