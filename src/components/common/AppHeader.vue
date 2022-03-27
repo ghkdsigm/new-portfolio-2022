@@ -27,7 +27,7 @@ export default {
     return {
       blackObject: {
         color: "#000",
-        textShadow: "0 0 3px #fff",
+        //textShadow: "0 0 3px #fff",
       },
       whiteObject: {
         color: "#fff",

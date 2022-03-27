@@ -106,6 +106,7 @@ export default {
         // do something when the instance updates
       },
       onBeforeStart: function () {
+        // do something before scrolling begins
         // eslint-disable-next-line no-unused-vars
         this.pages.forEach((page, i) => {
           page.classList.remove("pg-active");
@@ -119,6 +120,16 @@ export default {
       },
       onFinish: function () {
         // do something when scrolling ends
+        const linkSel1 = document.querySelector(".router-link-active");
+        const linkSel2 = document.querySelector(".router-link-exact-active");
+        if (this.index == 4 || this.index == 5) {
+          linkSel1.style.color = "#fff";
+          linkSel2.style.color = "#fff";
+        } else {
+          linkSel1.style.color = "#000";
+          linkSel2.style.color = "#000";
+        }
+        return;
       },
     });
   },
