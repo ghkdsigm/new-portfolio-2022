@@ -52,11 +52,7 @@ export default {
     height: 250px;
     left: 0;
     bottom: 0;
-    background: -webkit-gradient(
-      linear,
-      top,
-      color-stop(50%, rgba(0, 0, 0, 0.322))
-    );
+    background: linear-gradient(to top, rgb(0 0 0), rgb(0 0 0 / 0%));
     display: block;
   }
   .workbtnWrap {

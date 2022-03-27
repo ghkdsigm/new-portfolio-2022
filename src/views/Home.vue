@@ -358,7 +358,7 @@ export default {
       height: 30px;
       left: 0;
       bottom: 0;
-      /* background: linear-gradient(to top,rgb(0 0 0),rgb(0 0 0 / 45%)); */
+      background: linear-gradient(to top, rgb(0 0 0), rgb(0 0 0 / 45%));
       display: block;
     }
     &:after {
@@ -368,7 +368,7 @@ export default {
       height: 230px;
       left: 0;
       top: 0;
-      // background: linear-gradient(to bottom, rgb(0 0 0) 10%, rgba(0, 0, 0, 0));
+      background: linear-gradient(to bottom, rgb(0 0 0) 10%, rgba(0, 0, 0, 0));
       display: block;
     }
     canvas {
