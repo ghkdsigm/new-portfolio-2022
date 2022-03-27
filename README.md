@@ -5,9 +5,9 @@
 <a  href="https://mottohportfolio.shop/"></a>
 ```
 
-### Compiles and hot-reloads for development
+### 포트폴리오용 API 제작 및 활용
 ```
-npm run serve
+https://hshportfolio-api.herokuapp.com/portfolios
 ```
 
 ### Compiles and minifies for production
