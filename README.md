@@ -8,17 +8,15 @@
 ```
 
 ### 데모사이트 바로가기
-```
 <!-- <a  href="https://mottohportfolio.shop/"></a> -->
-[a link] (https://mottohportfolio.shop/)
-```
+https://mottohportfolio.shop/
+
 
 ### 포트폴리오용 API 제작 및 활용
-```
 <!-- <a  href="https://hshportfolio-api.herokuapp.com/portfolios"></a> -->
 
-[a link] (https://hshportfolio-api.herokuapp.com/portfolios)
-```
+https://hshportfolio-api.herokuapp.com/portfolios
+
 
 ### 사용 플러그인
 ```
@@ -36,4 +34,3 @@
 - es6-promise
 - axios
 ```
-
