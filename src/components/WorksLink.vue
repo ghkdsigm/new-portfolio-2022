@@ -77,6 +77,13 @@ export default {
       height: 100%;
       display: block;
       text-align: center;
+      span {
+        position: relative;
+        z-index: 100;
+        line-height: 57px;
+        color: #fff;
+        font-size: 20px;
+      }
       &::before {
         transform: translate3d(-100%, 0, 0);
         background-color: #000;
@@ -94,7 +101,9 @@ export default {
       }
       &:hover {
         transform: translate3d(0, 0, 0);
-        background: #000;
+        &::before {
+          transform: translate3d(0, 0, 0);
+        }
       }
       span {
         position: relative;
