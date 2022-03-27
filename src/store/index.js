@@ -26,7 +26,6 @@ export const store = new Vuex.Store({
       MyInfoList()
         .then(res => {
           context.commit("SET_INFO", res.data);
-          console.log(res.data);
         })
         .catch(error => {
           console.log(error);
@@ -36,7 +35,6 @@ export const store = new Vuex.Store({
       MyOperationList()
         .then(res => {
           context.commit("SET_OPERATION", res.data);
-          console.log(res.data);
         })
         .catch(error => {
           console.log(error);
@@ -46,7 +44,6 @@ export const store = new Vuex.Store({
       MyFront()
         .then(res => {
           context.commit("SET_MYFRONT", res.data);
-          console.log(res);
         })
         .catch(err => {
           console.log(err);
