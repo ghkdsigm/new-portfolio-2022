@@ -16,5 +16,16 @@ export const router = new VueRouter({
       name: "work",
       component: () => import("@/views/Works.vue"),
     },
+    {
+      path: "/404",
+      name: "NotFound",
+      component: () => import("@/routes/NotFound.vue"),
+    },
+    {
+      path: "*",
+      redirect: to => {
+        return { name: "NotFound" };
+      },
+    },
   ],
 });
