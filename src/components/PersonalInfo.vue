@@ -79,7 +79,7 @@
                 <li>
                   <span
                     >Eclipse / VSCode / Powerpoint / Excel / Photoshop /
-                    illustrator / Atom
+                    Illustrator / Atom
                   </span>
                 </li>
               </ul>
