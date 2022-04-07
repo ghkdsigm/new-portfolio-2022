@@ -302,6 +302,8 @@ export default {
 <style lang="scss" scoped>
 .modal-body-container {
   position: relative;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .modal-header-close-button {
@@ -316,11 +318,13 @@ export default {
 }
 
 .modal-header-image-wrapper {
+  width: 60%;
   height: 45vh;
   text-align: center;
   position: relative;
   background: #2b2b2b;
   > img {
+    width: 100% !important;
     height: 100%;
     width: inherit;
   }
@@ -335,6 +339,7 @@ export default {
 
 .modal-header-item {
   color: #ffbd8f;
+  width: 100%;
 }
 
 .m-contents p {
@@ -358,10 +363,11 @@ export default {
 
 .modal-header-content-wrapper {
   margin-top: 20px;
+  width: 40%;
   text-align: center;
   color: #bbbbbb;
   font-size: 16px;
-  padding: 0 85px;
+  padding: 0 25px;
 }
 
 .modal-header-github-wrapper {
