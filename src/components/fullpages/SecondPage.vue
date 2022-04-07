@@ -54,8 +54,14 @@
         </div>
         <div class="modal-header-item modal-header-content-wrapper m-contents">
           <p><b>참 여 도 :</b>{{ modalData.party }}</p>
-          <p>
-            <b>관련기사 및 정보 :</b><a :href="modalData.party">바로가기</a>
+          <p v-if="!`${modalData.articles}` == ''">
+            <b>관련기사 및 정보 :</b
+            ><a
+              :href="modalData.articles"
+              target="_blank"
+              style="color: #8cdefe"
+              >바로가기</a
+            >
           </p>
           <p><b>기간 :</b>{{ modalData.time }}</p>
           <p><b>사용언어 :</b>{{ modalData.language }}</p>
