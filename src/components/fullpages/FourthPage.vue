@@ -232,14 +232,13 @@ export default {
 }
 
 .modal-header-image-wrapper {
-  width: 60%;
+  width: 70%;
   height: 45vh;
   text-align: center;
   position: relative;
   background: #2b2b2b;
   > img {
     width: 100% !important;
-    height: 100%;
     width: inherit;
   }
 }
@@ -276,7 +275,7 @@ export default {
 
 .modal-header-content-wrapper {
   margin-top: 20px;
-  width: 40%;
+  width: 30%;
   text-align: center;
   color: #bbbbbb;
   font-size: 16px;
