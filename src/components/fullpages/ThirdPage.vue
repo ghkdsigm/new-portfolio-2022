@@ -56,6 +56,7 @@
           <p><b>참 여 도 :</b>{{ modalData.party }}</p>
           <p><b>기간 :</b>{{ modalData.time }}</p>
           <p><b>사용언어 :</b>{{ modalData.language }}</p>
+          <p><b class="blockB">주 이용자 :</b>{{ modalData.target }}</p>
           <p><b class="blockB">과업내용 :</b>{{ modalData.content }}</p>
         </div>
       </div>
