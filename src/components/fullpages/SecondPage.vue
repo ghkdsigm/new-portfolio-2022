@@ -338,6 +338,7 @@ export default {
   text-align: center;
   position: relative;
   background: #2b2b2b;
+  overflow-y: auto;
   > img {
     width: 100% !important;
     width: inherit;
