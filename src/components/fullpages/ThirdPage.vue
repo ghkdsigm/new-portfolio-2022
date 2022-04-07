@@ -45,13 +45,18 @@
         <div class="modal-header-close-button" @click="closeModal">x</div>
         <div class="modal-header-item modal-header-title-wrapper">
           {{ modalData.title }}
+          <p style="color: #fff; font-size: 15px; font-weight: 100">
+            {{ modalData.sub }}
+          </p>
         </div>
         <div class="modal-header-image-wrapper">
           <img :src="modalData.innerImage" />
         </div>
         <div class="modal-header-item modal-header-content-wrapper m-contents">
-          <p><b class="blockB">과업내용 :</b>{{ modalData.content }}</p>
           <p><b>참 여 도 :</b>{{ modalData.party }}</p>
+          <p><b>기간 :</b>{{ modalData.time }}</p>
+          <p><b>사용언어 :</b>{{ modalData.language }}</p>
+          <p><b class="blockB">과업내용 :</b>{{ modalData.content }}</p>
         </div>
       </div>
       <div slot="footer" class="footerLink">
@@ -282,10 +287,9 @@ export default {
 
   b {
     display: inline-block;
-    font-weight: 600;
+    font-weight: 400;
     color: #ffb27b;
     margin-right: 5px;
-    font-size: 18px;
 
     &.blockB {
       display: block;
