@@ -199,8 +199,8 @@ img {
 
 .p02 {
   position: absolute;
-  bottom: 120px;
-  left: 500px;
+  left: 200px;
+  bottom: 510px;
 }
 
 .p03 {
@@ -223,7 +223,7 @@ img {
 
 .p06 {
   position: absolute;
-  left: 200px;
-  bottom: 510px;
+  bottom: 120px;
+  left: 500px;
 }
 </style>
