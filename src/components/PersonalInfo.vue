@@ -65,7 +65,7 @@
               <h5>Skills / Tools</h5>
               <ul class="mytools">
                 <li>
-                  <span>HTML5 / CSS3 / SCSS</span>
+                  <span>Html5 / Css3 / Scss</span>
                 </li>
                 <li>
                   <span
