@@ -48,7 +48,7 @@
       trigger="hover"
       class="p06 p"
     >
-      <span>스카이워커 배구단 전광판운영사업2</span>
+      <span>자사 플랫폼 UBSPORTS 데이터센터 구축</span>
     </enlargeable-image>
 
     <div class="particle">

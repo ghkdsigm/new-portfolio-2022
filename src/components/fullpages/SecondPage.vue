@@ -65,6 +65,7 @@
           </p>
           <p><b>기간 :</b>{{ modalData.time }}</p>
           <p><b>사용언어 :</b>{{ modalData.language }}</p>
+          <p><b>구축범위 :</b>{{ modalData.things }}</p>
           <p><b class="blockB">주 이용자 :</b>{{ modalData.target }}</p>
           <p><b class="blockB">과업내용 :</b>{{ modalData.content }}</p>
         </div>
