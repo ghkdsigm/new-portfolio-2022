@@ -64,10 +64,10 @@
             >
           </p>
           <p><b>기간 :</b>{{ modalData.time }}</p>
-          <p><b>사용언어 :</b>{{ modalData.language }}</p>
-          <p><b>구축범위 :</b>{{ modalData.things }}</p>
+          <p><b>사용 언어 :</b>{{ modalData.language }}</p>
+          <p><b>개발 범위 :</b>{{ modalData.things }}</p>
           <p><b class="blockB">주 이용자 :</b>{{ modalData.target }}</p>
-          <p><b class="blockB">과업내용 :</b>{{ modalData.content }}</p>
+          <p><b class="blockB">과업 내용 :</b>{{ modalData.content }}</p>
         </div>
       </div>
       <div slot="footer" class="footerLink">
