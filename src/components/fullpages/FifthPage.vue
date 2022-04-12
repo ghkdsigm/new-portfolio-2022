@@ -8,7 +8,7 @@
       trigger="hover"
       class="p01 p"
     >
-      <span>팀K리그 vs 유벤투스 전광판운영사업</span>
+      <span>팀K리그 vs 유벤투스 전광판운영사업 디스플레이 디자인 제작</span>
     </enlargeable-image>
     <enlargeable-image
       src="https://raw.githubusercontent.com/ghkdsigm/new-portfolio-2022/main/src/assets/images/design/d04.jpg"
@@ -24,7 +24,7 @@
       trigger="hover"
       class="p03 p"
     >
-      <span>스카이워커 배구단 전광판운영사업</span>
+      <span>스카이워커 배구단 전광판운영사업 디스플레이 디자인 제작</span>
     </enlargeable-image>
     <enlargeable-image
       src="https://raw.githubusercontent.com/ghkdsigm/new-portfolio-2022/main/src/assets/images/design/d06.png"
@@ -40,7 +40,7 @@
       trigger="hover"
       class="p05 p"
     >
-      <span>스포츠영웅 후보자 추천</span>
+      <span>스포츠영웅 후보자 추천 포스터 디자인 제작</span>
     </enlargeable-image>
     <enlargeable-image
       src="https://raw.githubusercontent.com/ghkdsigm/new-portfolio-2022/main/src/assets/images/design/d07.gif"
@@ -206,7 +206,7 @@ img {
 .p03 {
   position: absolute;
   top: 400px;
-  right: 500px;
+  right: 400px;
 }
 
 .p04 {
