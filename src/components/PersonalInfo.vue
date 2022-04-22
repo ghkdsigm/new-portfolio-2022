@@ -30,17 +30,17 @@
               <ul>
                 <li><span>2008.03.</span><span>서울양정고등학교 졸업</span></li>
                 <li>
-                  <span>2008.03.</span><span>경기대학교 경영학과 졸업</span>
+                  <span>2016.01.</span><span>경기대학교 경영학과 졸업</span>
                 </li>
                 <li>
-                  <span>2008.03.</span
+                  <span>2016.12.</span
                   ><span
                     >NCS 기반 반응형 디지털웹(웹표준&amp;웹접근성) 과정
                     수료</span
                   >
                 </li>
                 <li>
-                  <span>2008.03.</span
+                  <span>2022.01.</span
                   ><span
                     >패스트캠퍼스 프론트엔드 초격차 패키지 온라인 교육 과정
                     수료</span
@@ -52,25 +52,25 @@
               <h5>Experience / Licenses</h5>
               <ul>
                 <li>
-                  <span>2008.03.</span><span>자동차1종보통면허 취득</span>
+                  <span>2008.08.</span><span>자동차1종보통면허 취득</span>
                 </li>
-                <li><span>2008.03.</span><span>텔레마케팅관리사 취득</span></li>
+                <li><span>2012.03.</span><span>텔레마케팅관리사 취득</span></li>
                 <li>
-                  <span>2008.03.</span><span>한국사능력검정 1급 취득</span>
+                  <span>2016.01.</span><span>한국사능력검정 1급 취득</span>
                 </li>
-                <li><span>2008.03.</span><span>정보처리기사 취득</span></li>
+                <li><span>2019.08.</span><span>정보처리기사 취득</span></li>
               </ul>
             </div>
             <div class="career">
               <h5>Skills / Tools</h5>
               <ul class="mytools">
                 <li>
-                  <span>Html5 / Css3 / Scss</span>
+                  <span>Html5 / Css3 / Scss / Tailwind.css</span>
                 </li>
                 <li>
                   <span
-                    >Javascript / Jquery / Typescript / Vue / Nuxt.js / Node.js
-                    / Mysql / Firebase</span
+                    >Javascript / Jquery / Typescript / Vue2,3 / Nuxt.js /
+                    Node.js / Mysql / Firebase</span
                   >
                 </li>
                 <li>
@@ -79,7 +79,7 @@
                 <li>
                   <span
                     >Eclipse / VSCode / Powerpoint / Excel / Photoshop /
-                    Illustrator / Atom
+                    Illustrator / Figma / Atom
                   </span>
                 </li>
               </ul>
