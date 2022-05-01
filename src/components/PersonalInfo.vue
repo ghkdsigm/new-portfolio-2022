@@ -68,10 +68,7 @@
                   <span>Html5 / Css3 / Scss / Tailwind.css</span>
                 </li>
                 <li>
-                  <span
-                    >Javascript / Jquery / Typescript / Vue2,3 / Nuxt.js /
-                    Node.js / Mysql / Firebase</span
-                  >
+                  <span>Javascript / Jquery / Vue2,3 / Nuxt.js / Firebase</span>
                 </li>
                 <li>
                   <span>Git / Github / Svn </span>
