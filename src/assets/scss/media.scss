@@ -559,6 +559,20 @@
       height:22vh;
     }
 
+    .app-contents .pg-active .enlargeable-image {
+      z-index: 9999;
+      position: relative;
+      left: 7rem;
+      top: auto;
+      bottom: 15%;
+      right: auto;
+      padding: 10px 0;
+      font-weight: 100;
+    }
+    .app-contents .pg-active .enlargeable-image .full {
+      top: 15px;
+    }
+
     //footer 
     .section06 .footer .footer_wrap {
       padding:1rem;

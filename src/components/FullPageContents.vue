@@ -112,7 +112,7 @@ export default {
         if (windowWidth.matches) {
           //screen and (max-width: 768px)에 해당한다.
           this.pages.forEach((page, i) => {
-            page.classList.add("pg-active");
+            //page.classList.add("pg-active");
           });
         } else {
           //screen and (max-width: 768px)에 해당하지 않는다.
