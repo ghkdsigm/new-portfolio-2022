@@ -316,8 +316,8 @@
   
   @media (max-width: 1280px) {
     .app-contents .headlineTxt .comment {
-      font-size: 1.8rem;
-      line-height: 2rem;
+      font-size: 2rem;
+      line-height: 3rem;
     }
     .app-contents .personal .personal__links .personal__item a{
       font-size: 0.8rem;
@@ -417,6 +417,10 @@
   }
 
   @media (max-width: 700px) {
+    .app-contents .headlineTxt .comment {
+      font-size: 2rem;
+      line-height: 3rem;
+    }
     .app-contents .section02 .container .innerWrap .Info_list h4:after{
       display:none;
     }
@@ -429,11 +433,7 @@
   }
   
   @media (max-width: 550px) {
-    .header {left:20px;}
-    .app-contents .headlineTxt .comment {
-      font-size: 2rem;
-      line-height: 3rem;
-    }
+    .header {left:20px;}    
     .section01 #canvas_area {
       display:none;
     }
@@ -454,7 +454,8 @@
       right: 20px;
     }
     .app-contents .section01 .workingImg {
-      display:none;
+      
+
     }
     .app-contents .section02 .container .innerWrap{
       margin: 10px 0;    display: block;
