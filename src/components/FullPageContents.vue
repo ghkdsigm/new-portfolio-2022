@@ -108,9 +108,18 @@ export default {
       onBeforeStart: function () {
         // do something before scrolling begins
         // eslint-disable-next-line no-unused-vars
-        this.pages.forEach((page, i) => {
-          page.classList.remove("pg-active");
-        });
+        var windowWidth = window.matchMedia("screen and (max-width: 768px)");
+        if (windowWidth.matches) {
+          //screen and (max-width: 768px)에 해당한다.
+          this.pages.forEach((page, i) => {
+            page.classList.add("pg-active");
+          });
+        } else {
+          //screen and (max-width: 768px)에 해당하지 않는다.
+          this.pages.forEach((page, i) => {
+            page.classList.remove("pg-active");
+          });
+        }
       },
       onStart: function () {
         // do something when scrolling begins

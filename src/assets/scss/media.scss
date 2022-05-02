@@ -423,9 +423,21 @@
     .app-contents .section02 .container .innerWrap .Info_list h4:before{
       display:none;
     }
+    .section01 #canvas_area {
+      display:none;
+    }
   }
   
   @media (max-width: 550px) {
+    .header {left:20px;}
+    .app-contents .headlineTxt .comment {
+      font-size: 2rem;
+      line-height: 3rem;
+    }
+    .section01 #canvas_area {
+      display:none;
+    }
+    .P_img {padding-bottom:1rem;}
     .app-contents .section02 .container .innerWrap .Info_picture .p_basic_inner{
       padding: 1rem 0 1rem 0;
     }
@@ -437,6 +449,9 @@
     }
     .app-contents .headlineTxt{
       left: 20px;
+    }
+    .pg-page .side_Styled {
+      right: 20px;
     }
     .app-contents .section01 .workingImg {
       display:none;
@@ -456,6 +471,12 @@
       overflow: scroll;
       background: #eee;
     }
+    .app-contents .section03 .innerWrap .r_career_side {
+      margin-bottom:1rem
+    }
+    .r_career_bottom {
+      display:none;
+    }
     .container .innerWrap .Info_list .P_basic {
       padding:0;
     }
@@ -472,6 +493,15 @@
     }
 
     /**서브**/
+    // .text {
+    //   -webkit-transform: scale(0, 0);
+    //   transform: scale(0, 0);
+    //   transition: all 500ms;
+    // }
+    // .pg-active .text {
+    //   transform:none
+    // }
+
     .text .wrapper {margin-left:0;}
     .text .wrapper .swiper-container {
         height: 200px;
@@ -527,6 +557,12 @@
     }
     .modal-wrapper .modal-container .modal-body .modal-body-container .modal-header-image-wrapper{
       height:22vh;
+    }
+
+    //footer 
+    .section06 .footer .footer_wrap {
+      padding:1rem;
+      font-size:0.8rem;
     }
   }
   
