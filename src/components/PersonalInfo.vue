@@ -71,7 +71,7 @@
                   <span>Javascript / Jquery / Vue2,3 / Nuxt.js / Firebase</span>
                 </li>
                 <li>
-                  <span>Git / Github / Svn </span>
+                  <span>Git / Github / Svn / Netlify / Heroku </span>
                 </li>
                 <li>
                   <span
