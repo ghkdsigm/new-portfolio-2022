@@ -2,7 +2,8 @@
   <div>
     <h2>Contact</h2>
     <p>
-      문의글이나 관심글은 아래 입력란에 작성 후 보내주시면 감사하겠습니다. :)
+      문의글이나 관심글은 아래 입력란에 작성 후 전송하여 주시거나, 빠른 답변을
+      위해 유선상 연락주시면 감사하겠습니다. :)
     </p>
     <form id="myform" ref="form" @submit.prevent="sendEmail">
       <div class="formGroup">
