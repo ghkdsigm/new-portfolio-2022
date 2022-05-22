@@ -159,7 +159,7 @@ export default {
           #resume {
             font-size: 0.8rem;
             padding: 0.2rem 0.5rem;
-            border-radius: 10px;
+            border-radius: 15px;
             letter-spacing: 0;
             margin: 0 0 0 5px;
             line-height: 17px;
