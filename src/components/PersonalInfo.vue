@@ -12,7 +12,19 @@
             <ul>
               <li>1990.01.13. Yangcheon-gu, Seoul, Republic of Korea</li>
               <li>ghkdsigm3@naver.com / ghkdsigm3@gmail.com</li>
-              <li>010-9406-3935</li>
+              <li>
+                010-9406-3935 /<a
+                  href="javascript:void(0);"
+                  v-on:click="say('준비중입니다.')"
+                  id="resume"
+                >
+                  <img
+                    src="https://w7.pngwing.com/pngs/691/487/png-transparent-pdf-computer-icons-pdf-angle-image-file-formats-text.png"
+                    alt="이력서"
+                  />
+                  이력서 & 경력기술서.pdf</a
+                >
+              </li>
             </ul>
           </div>
         </div>
@@ -95,6 +107,16 @@
   </div>
 </template>
 
+<script>
+export default {
+  methods: {
+    say: function (message) {
+      alert(message);
+    },
+  },
+};
+</script>
+
 <style lang="scss" scoped>
 .innerWrap {
   display: flex;
@@ -116,6 +138,8 @@
         letter-spacing: 5px;
         color: #000;
         font-weight: 300;
+        align-items: center;
+        display: flex;
       }
       p {
         font-size: 23px;
@@ -130,6 +154,31 @@
           line-height: 36px;
           font-weight: 300;
           letter-spacing: 0.3px;
+          display: flex;
+          align-items: center;
+          #resume {
+            font-size: 0.8rem;
+            padding: 0.2rem 0.5rem;
+            border-radius: 10px;
+            letter-spacing: 0;
+            margin: 0 0 0 5px;
+            line-height: 17px;
+            display: flex;
+            align-items: center;
+            border: 1px solid #2262ad;
+            color: #2262ad;
+            background: #fff;
+            img {
+              width: 20px;
+              padding: 0 5px 0 0;
+            }
+            &:hover {
+              font-weight: 300;
+              background: #2262ad;
+              color: #fff;
+              border: 1px solid transparent;
+            }
+          }
         }
       }
     }
