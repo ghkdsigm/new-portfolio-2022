@@ -35,9 +35,9 @@
               <li>
                 <img src="@/assets/images/github.png" alt="github 아이콘" />
               </li>
-              <!-- <li>
+              <li>
                 <img src="@/assets/images/figma.png" alt="figma 아이콘" />
-              </li> -->
+              </li>
               <li>
                 <img src="@/assets/images/ps.png" alt="photoshop 아이콘" />
               </li>
