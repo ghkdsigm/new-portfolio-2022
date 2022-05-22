@@ -65,7 +65,10 @@
               <h5>Skills / Tools</h5>
               <ul class="mytools">
                 <li>
-                  <span>Html5 / Css3 / Scss / Tailwind.css</span>
+                  <span
+                    >Html5 / Css3 / Scss / Tailwind.css / Bootstrap /
+                    Mudblazor</span
+                  >
                 </li>
                 <li>
                   <span>Javascript / Jquery / Vue2,3 / Nuxt.js / Firebase</span>
@@ -76,7 +79,7 @@
                 <li>
                   <span
                     >Eclipse / VSCode / Powerpoint / Excel / Photoshop /
-                    Illustrator / Figma / Atom
+                    Illustrator / Figma / Zeplin
                   </span>
                 </li>
               </ul>

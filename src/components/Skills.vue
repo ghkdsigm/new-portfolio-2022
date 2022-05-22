@@ -35,8 +35,13 @@
               <li>
                 <img src="@/assets/images/github.png" alt="github 아이콘" />
               </li>
+            </ul>
+            <ul class="skills">
               <li>
                 <img src="@/assets/images/figma.png" alt="figma 아이콘" />
+              </li>
+              <li>
+                <img src="@/assets/images/zeplin.png" alt="zeplin 아이콘" />
               </li>
               <li>
                 <img src="@/assets/images/ps.png" alt="photoshop 아이콘" />
@@ -96,7 +101,7 @@
       padding: 0;
       justify-content: center;
       li {
-        margin: 0 15px 15px;
+        margin: 15px 15px 15px;
         width: 90px;
         overflow: hidden;
         display: inline-block;
@@ -104,6 +109,9 @@
         img {
           display: block;
           width: 100%;
+        }
+        &:hover {
+          transform: translateY(-10px);
         }
       }
     }
