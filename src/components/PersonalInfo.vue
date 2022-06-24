@@ -89,7 +89,7 @@
                   </span>
                 </li>
                 <li>
-                  <span>Git / Github / Svn / Netlify / Heroku </span>
+                  <span>Git / Github / Gitlab / Svn / Netlify / Heroku </span>
                 </li>
                 <li>
                   <span
