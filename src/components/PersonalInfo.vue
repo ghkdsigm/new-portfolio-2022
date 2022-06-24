@@ -84,7 +84,7 @@
                 </li>
                 <li>
                   <span
-                    >Javascript / Jquery / Vue2,3 / Nuxt.js / Blazor(asp.net) /
+                    >Javascript / Jquery / Vue2,3 / Nuxt.js / Blazor(Asp.net) /
                     Firebase
                   </span>
                 </li>
