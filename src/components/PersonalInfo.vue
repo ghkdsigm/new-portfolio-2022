@@ -83,7 +83,10 @@
                   >
                 </li>
                 <li>
-                  <span>Javascript / Jquery / Vue2,3 / Nuxt.js / Firebase</span>
+                  <span
+                    >Javascript / Jquery / Vue2,3 / Nuxt.js / Firebase /
+                    Blazor(asp.net)</span
+                  >
                 </li>
                 <li>
                   <span>Git / Github / Svn / Netlify / Heroku </span>
